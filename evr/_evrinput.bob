@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-17 11:26:44 by wang1-->
+<display version="2.0.0">
+  <name>evr_input</name>
+  <width>182</width>
+  <height>135</height>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P):$(NAME_INP)CodeExt-SP</pv_name>
+    <x>44</x>
+    <y>114</y>
+    <width>50</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="InputText" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="InputBackground" red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_1</name>
+    <pv_name>$(P):$(NAME_INP)CodeBack-SP</pv_name>
+    <x>132</x>
+    <y>114</y>
+    <width>50</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="InputText" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="InputBackground" red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P):$(NAME_INP)TrigExt-Sel</pv_name>
+    <x>44</x>
+    <y>88</y>
+    <width>50</width>
+    <height>21</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_1</name>
+    <pv_name>$(P):$(NAME_INP)TrigBack-Sel</pv_name>
+    <x>132</x>
+    <y>88</y>
+    <width>50</width>
+    <height>21</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Local</text>
+    <x>44</x>
+    <y>72</y>
+    <width>53</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Uplink</text>
+    <x>132</x>
+    <y>72</y>
+    <width>50</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Mode</text>
+    <y>88</y>
+    <width>44</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Code</text>
+    <y>115</y>
+    <width>44</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_2</name>
+    <pv_name>$(P):$(NAME_INP)Lvl-Sel</pv_name>
+    <x>44</x>
+    <y>54</y>
+    <width>50</width>
+    <height>21</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_3</name>
+    <pv_name>$(P):$(NAME_INP)Edge-Sel</pv_name>
+    <x>132</x>
+    <y>54</y>
+    <width>50</width>
+    <height>21</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Level</text>
+    <y>54</y>
+    <width>35</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Edge</text>
+    <x>97</x>
+    <y>54</y>
+    <width>44</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>$(NAME_INP)</text>
+    <x>44</x>
+    <width>108</width>
+    <height>25</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(P):$(NAME_INP)State-I</pv_name>
+    <x>44</x>
+    <y>25</y>
+    <width>50</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>DBus</text>
+    <x>97</x>
+    <y>25</y>
+    <width>39</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_4</name>
+    <pv_name>$(P):$(NAME_INP)DBus-Sel</pv_name>
+    <x>132</x>
+    <y>25</y>
+    <width>50</width>
+    <height>21</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Sate</text>
+    <y>25</y>
+    <width>35</width>
+    <height>19</height>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

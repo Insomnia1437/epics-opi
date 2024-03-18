@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-15 11:39:12 by wang1-->
+<display version="2.0.0">
+  <name>Display</name>
+  <widget type="label" version="2.0.0">
+    <name>Label_Prescaler2</name>
+    <text>$(N)</text>
+    <width>27</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Prescaler0SP</name>
+    <pv_name>$(P):PS$(N)Div-SP</pv_name>
+    <x>34</x>
+    <y>19</y>
+    <width>60</width>
+    <foreground_color>
+      <color name="Write_Foreground" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Prescaler0RB</name>
+    <pv_name>$(P):PS$(N)Div-RB</pv_name>
+    <x>97</x>
+    <y>20</y>
+    <width>70</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Prescaler0RB_1</name>
+    <pv_name>$(P):PS$(N)Rate-I</pv_name>
+    <x>173</x>
+    <y>20</y>
+    <width>80</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_13</name>
+    <pv_name>$(P):PS$(N)Label-I</pv_name>
+    <x>27</x>
+    <width>226</width>
+    <height>19</height>
+    <foreground_color>
+      <color name="Write_Foreground" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <format>6</format>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Prescaler0SP_2</name>
+    <pv_name>$(P):PS$(N)PhasOffs-SP</pv_name>
+    <x>34</x>
+    <y>38</y>
+    <width>60</width>
+    <foreground_color>
+      <color name="Write_Foreground" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Prescaler0RB_2</name>
+    <pv_name>$(P):PS$(N)PhasOffs-RB</pv_name>
+    <x>97</x>
+    <y>38</y>
+    <width>70</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_Prescaler2_1</name>
+    <text>Freq</text>
+    <y>19</y>
+    <width>34</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_Prescaler2_2</name>
+    <text>Phas</text>
+    <y>40</y>
+    <width>34</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_Prescaler2_3</name>
+    <text>Raw</text>
+    <y>58</y>
+    <width>34</width>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Prescaler0SP_3</name>
+    <pv_name>$(P):PS$(N)PhasOffsRaw-SP</pv_name>
+    <x>34</x>
+    <y>57</y>
+    <width>60</width>
+    <foreground_color>
+      <color name="Write_Foreground" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Prescaler0RB_4</name>
+    <pv_name>$(P):PS$(N)PhasOffsRaw-RB</pv_name>
+    <x>97</x>
+    <y>58</y>
+    <width>70</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+</display>

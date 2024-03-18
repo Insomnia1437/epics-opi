@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-17 10:16:51 by wang1-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>505</width>
+  <height>75</height>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P):Out$(O)Src-SP.DESC</pv_name>
+    <width>145</width>
+    <height>25</height>
+    <font>
+      <font family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_6</name>
+    <pv_name>$(P):Out$(O)Label-I</pv_name>
+    <x>236</x>
+    <width>269</width>
+    <height>25</height>
+    <foreground_color>
+      <color name="Write_Foreground" red="0" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <format>6</format>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P):Out$(O)Src-RB</pv_name>
+    <x>410</x>
+    <y>25</y>
+    <width>94</width>
+    <height>23</height>
+    <font>
+      <font family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_1</name>
+    <pv_name>$(P):Out$(O)Ena-SP</pv_name>
+    <x>145</x>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_8</name>
+    <pv_name>$(P):Out$(O)SrcPulse-SP</pv_name>
+    <x>48</x>
+    <y>25</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_9</name>
+    <pv_name>$(P):Out$(O)SrcDBus-SP</pv_name>
+    <x>138</x>
+    <y>25</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_10</name>
+    <pv_name>$(P):Out$(O)SrcScale-SP</pv_name>
+    <x>228</x>
+    <y>25</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_11</name>
+    <pv_name>$(P):Out$(O)SrcGate-SP</pv_name>
+    <x>319</x>
+    <y>25</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_12</name>
+    <pv_name>$(P):Out$(O)Src2Pulse-SP</pv_name>
+    <x>48</x>
+    <y>50</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_13</name>
+    <pv_name>$(P):Out$(O)Src2DBus-SP</pv_name>
+    <x>138</x>
+    <y>50</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_14</name>
+    <pv_name>$(P):Out$(O)Src2Scale-SP</pv_name>
+    <x>228</x>
+    <y>50</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_15</name>
+    <pv_name>$(P):Out$(O)Src2Gate-SP</pv_name>
+    <x>319</x>
+    <y>50</y>
+    <width>91</width>
+    <height>25</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Src 1</text>
+    <y>25</y>
+    <width>60</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Src 2</text>
+    <y>49</y>
+    <width>60</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P):Out$(O)Src2-RB</pv_name>
+    <x>410</x>
+    <y>50</y>
+    <width>94</width>
+    <height>23</height>
+    <font>
+      <font family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+</display>

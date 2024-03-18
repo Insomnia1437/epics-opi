@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-18 09:51:28 by wang1-->
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1187</width>
+  <height>602</height>
+  <widget type="group" version="3.0.0">
+    <name>Physical Inputs</name>
+    <width>610</width>
+    <height>602</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn0</name>
+      <macros>
+        <NAME_INP>BPIn0</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>197</x>
+      <y>7</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn1</name>
+      <macros>
+        <NAME_INP>BPIn1</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>197</x>
+      <y>146</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn2</name>
+      <macros>
+        <NAME_INP>BPIn2</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>197</x>
+      <y>285</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn3</name>
+      <macros>
+        <NAME_INP>BPIn3</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>197</x>
+      <y>424</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn4</name>
+      <macros>
+        <NAME_INP>BPIn4</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>403</x>
+      <y>7</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn5</name>
+      <macros>
+        <NAME_INP>BPIn5</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>403</x>
+      <y>146</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn6</name>
+      <macros>
+        <NAME_INP>BPIn6</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>403</x>
+      <y>289</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>BPIn7</name>
+      <macros>
+        <NAME_INP>BPIn7</NAME_INP>
+      </macros>
+      <file>_evrinput.bob</file>
+      <x>403</x>
+      <y>424</y>
+      <width>182</width>
+      <height>135</height>
+      <resize>2</resize>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Physical Inputs_1</name>
+      <y>7</y>
+      <width>156</width>
+      <height>280</height>
+      <style>3</style>
+      <font>
+        <font name="Normal Bold" family="OpenSans" style="BOLD" size="11.881188118811881">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="Header_2_Background" red="114" green="159" blue="207">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Container Grey" red="200" green="200" blue="200">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="embedded" version="2.0.0">
+        <name>In1</name>
+        <macros>
+          <NAME_INP>In1</NAME_INP>
+        </macros>
+        <file>_evrinput.bob</file>
+        <x>1</x>
+        <y>139</y>
+        <width>182</width>
+        <height>135</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+        <actions>
+        </actions>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="embedded" version="2.0.0">
+        <name>In0</name>
+        <macros>
+          <NAME_INP>In0</NAME_INP>
+        </macros>
+        <file>_evrinput.bob</file>
+        <x>1</x>
+        <y>1</y>
+        <width>182</width>
+        <height>135</height>
+        <resize>2</resize>
+        <transparent>true</transparent>
+        <actions>
+        </actions>
+        <border_width>1</border_width>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Physical Outputs_1</name>
+    <x>630</x>
+    <width>557</width>
+    <height>480</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="tabs" version="2.0.0">
+      <name>Tabbed Container</name>
+      <tabs>
+        <tab>
+          <name>FP</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>FP Container_3</name>
+              <macros>
+                <O>FP3</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>166</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>FP Container_2</name>
+              <macros>
+                <O>FP2</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>115</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>FP Container_1</name>
+              <macros>
+                <O>FP1</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>63</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>FP Container_0</name>
+              <macros>
+                <O>FP0</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>12</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>FPUV</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>UnivFP Container_0</name>
+              <macros>
+                <O>FPUV0</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>6</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>UnivFP Container_1</name>
+              <macros>
+                <O>FPUV1</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>57</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>UnivFP Container_2</name>
+              <macros>
+                <O>FPUV2</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>108</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>UnivFP Container_3</name>
+              <macros>
+                <O>FPUV3</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>159</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Backplane</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_15</name>
+              <macros>
+                <O>Back7</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>365</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_16</name>
+              <macros>
+                <O>Back6</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>314</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_17</name>
+              <macros>
+                <O>Back5</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>262</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_18</name>
+              <macros>
+                <O>Back4</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>211</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_13</name>
+              <macros>
+                <O>Back3</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>160</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_12</name>
+              <macros>
+                <O>Back2</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>109</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_11</name>
+              <macros>
+                <O>Back1</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>57</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_10</name>
+              <macros>
+                <O>Back0</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>6</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>TCLK</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_11</name>
+              <macros>
+                <O>TCLKB</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>57</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_10</name>
+              <macros>
+                <O>TCLKA</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>6</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_1</name>
+              <actions>
+                <action type="open_display">
+                  <file>evr-cml-output.bob</file>
+                  <macros>
+                    <O>TCLKA</O>
+                  </macros>
+                  <target>tab</target>
+                  <description>Open Display</description>
+                </action>
+              </actions>
+              <text>CML/GTX</text>
+              <x>432</x>
+              <y>6</y>
+              <width>61</width>
+              <height>20</height>
+              <font>
+                <font name="LinkText" family="Arial" style="REGULAR" size="8.910891089108912">
+                </font>
+              </font>
+              <background_color>
+                <color name="ButtonFG" red="180" green="180" blue="180">
+                </color>
+              </background_color>
+              <tooltip>$(actions)</tooltip>
+              <border_alarm_sensitive>false</border_alarm_sensitive>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_1</name>
+              <actions>
+                <action type="open_display">
+                  <file>evr-cml-output.bob</file>
+                  <macros>
+                    <O>TCLKB</O>
+                  </macros>
+                  <target>tab</target>
+                  <description>Open Display</description>
+                </action>
+              </actions>
+              <text>CML/GTX</text>
+              <x>432</x>
+              <y>57</y>
+              <width>61</width>
+              <height>20</height>
+              <font>
+                <font name="LinkText" family="Arial" style="REGULAR" size="8.910891089108912">
+                </font>
+              </font>
+              <background_color>
+                <color name="ButtonFG" red="180" green="180" blue="180">
+                </color>
+              </background_color>
+              <tooltip>$(actions)</tooltip>
+              <border_alarm_sensitive>false</border_alarm_sensitive>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Internal</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container_10</name>
+              <macros>
+                <O>Int</O>
+              </macros>
+              <file>_evroutput.bob</file>
+              <x>6</x>
+              <y>12</y>
+              <width>418</width>
+              <height>52</height>
+              <resize>1</resize>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+      </tabs>
+      <y>5</y>
+      <width>541</width>
+      <height>443</height>
+      <tooltip>
+      </tooltip>
+    </widget>
+  </widget>
+</display>

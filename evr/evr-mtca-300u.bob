@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-03-18 09:35:51 by wang1-->
+<display version="2.0.0">
+  <name>$(TITLE)</name>
+  <macros>
+    <TITLE>$(P)</TITLE>
+    <MP>TD-M:Ctrl-EVG-1:U-</MP>
+    <PEVR>TDL:Ctrl-EVR-001</PEVR>
+    <P>$(PEVR)</P>
+  </macros>
+  <width>1392</width>
+  <height>774</height>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="textentry" version="3.0.0">
+    <name>Label EVR</name>
+    <pv_name>$(P):Label-I</pv_name>
+    <x>18</x>
+    <y>31</y>
+    <width>847</width>
+    <height>25</height>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Read_Background" red="120" green="120" blue="120">
+      </color>
+    </background_color>
+    <format>6</format>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Prescalers</name>
+    <x>798</x>
+    <y>64</y>
+    <width>594</width>
+    <height>459</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>$(P):PSPolarity-Sel</pv_name>
+      <x>71</x>
+      <y>8</y>
+      <width>163</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Polarity</text>
+      <x>11</x>
+      <y>12</y>
+      <width>60</width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <macros>
+        <N>0</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>11</x>
+      <y>56</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <macros>
+        <N>1</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>11</x>
+      <y>140</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <macros>
+        <N>2</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>11</x>
+      <y>224</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <N>3</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>11</x>
+      <y>308</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <macros>
+        <N>4</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>305</x>
+      <y>56</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <macros>
+        <N>5</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>305</x>
+      <y>140</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <macros>
+        <N>6</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>305</x>
+      <y>224</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <macros>
+        <N>7</N>
+      </macros>
+      <file>_evrscale.bob</file>
+      <x>305</x>
+      <y>308</y>
+      <width>263</width>
+      <height>84</height>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Global</name>
+    <x>624</x>
+    <y>64</y>
+    <width>174</width>
+    <height>296</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Enabled</text>
+      <x>6</x>
+      <y>7</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):Ena-Sel</pv_name>
+      <x>91</x>
+      <y>7</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Link Status</text>
+      <x>6</x>
+      <y>25</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):Link-Sts</pv_name>
+      <x>91</x>
+      <y>25</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>PLL Status</text>
+      <x>6</x>
+      <y>43</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):Pll-Sts</pv_name>
+      <x>91</x>
+      <y>43</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Link Err Cnt</text>
+      <x>6</x>
+      <y>97</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):CntRxErr-I</pv_name>
+      <x>91</x>
+      <y>97</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>HBt TIMO Cnt</text>
+      <x>6</x>
+      <y>115</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):CntLinkTimo-I</pv_name>
+      <x>91</x>
+      <y>115</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Time Status</text>
+      <x>6</x>
+      <y>61</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):TimeValid-Sts</pv_name>
+      <x>91</x>
+      <y>61</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input</name>
+      <pv_name>$(P):EvtBlink0-SP</pv_name>
+      <x>90</x>
+      <y>173</y>
+      <width>67</width>
+      <height>19</height>
+      <foreground_color>
+        <color name="Write_Foreground" red="0" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>evr-expert.bob</file>
+          <target>tab</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Expert</text>
+      <x>42</x>
+      <y>197</y>
+      <height>19</height>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>FIFO OFlw</text>
+      <x>6</x>
+      <y>133</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):CntHwOflw-I</pv_name>
+      <x>91</x>
+      <y>133</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Sw OFlw</text>
+      <x>6</x>
+      <y>151</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):CntSwOflw-I</pv_name>
+      <x>91</x>
+      <y>151</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Blink Event</text>
+      <x>6</x>
+      <y>174</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Rx Pwr</text>
+      <x>6</x>
+      <y>79</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):SFPPwrRX-I</pv_name>
+      <x>91</x>
+      <y>79</y>
+      <width>65</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button</name>
+      <actions>
+        <action type="open_display">
+          <file>../evg/evg-seq.bob</file>
+          <macros>
+            <SS>SoftSeq0</SS>
+          </macros>
+          <target>tab</target>
+          <description>SoftSeq #0</description>
+        </action>
+        <action type="open_display">
+          <file>../evg/evg-seq.bob</file>
+          <macros>
+            <SS>SoftSeq1</SS>
+          </macros>
+          <target>tab</target>
+          <description>SoftSeq #1</description>
+        </action>
+        <action type="open_display">
+          <file>../evg/evg-seq.bob</file>
+          <macros>
+            <SS>SoftSeq2</SS>
+          </macros>
+          <target>tab</target>
+          <description>SoftSeq #2</description>
+        </action>
+      </actions>
+      <text>Sequencers</text>
+      <x>42</x>
+      <y>215</y>
+      <height>19</height>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button_2</name>
+      <actions>
+        <action type="open_display">
+          <file>evr-mtca-300u-io.bob</file>
+          <target>tab</target>
+          <description>IO</description>
+        </action>
+      </actions>
+      <text>IO</text>
+      <x>42</x>
+      <y>234</y>
+      <height>19</height>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Delay Generators (Pulsers)</name>
+    <x>18</x>
+    <y>64</y>
+    <width>594</width>
+    <height>710</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="tabs" version="2.0.0">
+      <name>Tabs_1</name>
+      <tabs>
+        <tab>
+          <name>Pulser 0-5</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser0_container_2</name>
+              <macros>
+                <N>0</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>13</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser1_container_2</name>
+              <macros>
+                <N>1</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>120</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser2_container_2</name>
+              <macros>
+                <N>2</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>227</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser3_container_2</name>
+              <macros>
+                <N>3</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>334</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser4_container_2</name>
+              <macros>
+                <N>4</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>441</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser5_container_2</name>
+              <macros>
+                <N>5</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>548</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Pulser 6-11</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser0_container_3</name>
+              <macros>
+                <N>6</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>13</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser1_container_3</name>
+              <macros>
+                <N>7</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>120</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser2_container_3</name>
+              <macros>
+                <N>8</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>227</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser3_container_3</name>
+              <macros>
+                <N>9</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>334</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser4_container_3</name>
+              <macros>
+                <N>10</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>441</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser5_container_3</name>
+              <macros>
+                <N>11</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>548</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Pulser 12-17</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser0_container_4</name>
+              <macros>
+                <N>12</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>13</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser1_container_4</name>
+              <macros>
+                <N>13</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>120</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser2_container_4</name>
+              <macros>
+                <N>14</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>227</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser3_container_4</name>
+              <macros>
+                <N>15</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>334</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser4_container_4</name>
+              <macros>
+                <N>16</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>441</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser5_container_4</name>
+              <macros>
+                <N>17</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>548</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Pulser 18-23</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser0_container_5</name>
+              <macros>
+                <N>18</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>13</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser1_container_5</name>
+              <macros>
+                <N>19</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>120</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser2_container_5</name>
+              <macros>
+                <N>20</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>227</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser3_container_5</name>
+              <macros>
+                <N>21</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>334</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser4_container_5</name>
+              <macros>
+                <N>22</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>441</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Pulser5_container_5</name>
+              <macros>
+                <N>23</N>
+                <GEN>DlyGen</GEN>
+              </macros>
+              <file>_evrdlygen.bob</file>
+              <y>548</y>
+              <width>571</width>
+              <height>97</height>
+              <resize>2</resize>
+              <transparent>true</transparent>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+      </tabs>
+      <width>575</width>
+      <height>685</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Group_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P):Time-I</pv_name>
+    <x>924</x>
+    <y>31</y>
+    <width>385</width>
+    <height>25</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Read_Foreground" red="0" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Text Input</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <text>${TITLE}</text>
+    <width>1309</width>
+    <height>32</height>
+    <font>
+      <font name="Title" family="OpenSans" style="BOLD" size="24.752475247524753">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Header_Background" red="52" green="101" blue="164">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Mappings</name>
+    <x>624</x>
+    <y>600</y>
+    <width>177</width>
+    <height>117</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_4</name>
+      <pv_name>$(P):EvtBlink0-SP</pv_name>
+      <x>98</x>
+      <y>12</y>
+      <width>67</width>
+      <height>19</height>
+      <foreground_color>
+        <color name="Write_Foreground" red="0" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>Blink Evt 1</text>
+      <x>6</x>
+      <y>13</y>
+      <width>92</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_5</name>
+      <pv_name>$(P):EvtBlink1-SP</pv_name>
+      <x>98</x>
+      <y>36</y>
+      <width>67</width>
+      <height>19</height>
+      <foreground_color>
+        <color name="Write_Foreground" red="0" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>Blink Evt 2</text>
+      <x>6</x>
+      <y>37</y>
+      <width>92</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_6</name>
+      <pv_name>$(P):EvtResetPS-SP</pv_name>
+      <x>98</x>
+      <y>59</y>
+      <width>67</width>
+      <height>19</height>
+      <foreground_color>
+        <color name="Write_Foreground" red="0" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>PS Reset</text>
+      <x>6</x>
+      <y>60</y>
+      <width>92</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>SFP</name>
+    <x>624</x>
+    <y>371</y>
+    <width>177</width>
+    <height>214</height>
+    <style>1</style>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="Header_2_Background" red="114" green="159" blue="207">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Group_Background" red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>Rx Pwr</text>
+      <x>10</x>
+      <y>37</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(P):SFPPwrRX-I</pv_name>
+      <x>85</x>
+      <y>37</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>Tx Pwr</text>
+      <x>10</x>
+      <y>55</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>$(P):SFPPwrTX-I</pv_name>
+      <x>85</x>
+      <y>55</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>Temperature</text>
+      <x>10</x>
+      <y>73</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(P):SFPT-I</pv_name>
+      <x>85</x>
+      <y>73</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>Link Speed</text>
+      <x>10</x>
+      <y>91</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(P):SFPSpeedLink-I</pv_name>
+      <x>85</x>
+      <y>91</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>Vendor</text>
+      <x>10</x>
+      <y>108</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(P):SFPVendor-I</pv_name>
+      <x>85</x>
+      <y>108</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>Part</text>
+      <x>10</x>
+      <y>124</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>$(P):SFPPart-I</pv_name>
+      <x>85</x>
+      <y>124</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Serial #</text>
+      <x>10</x>
+      <y>141</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_9</name>
+      <pv_name>$(P):SFPSerial-I</pv_name>
+      <x>85</x>
+      <y>141</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Manu. Date</text>
+      <x>10</x>
+      <y>158</y>
+      <width>70</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>$(P):SFPDateManu-I</pv_name>
+      <x>85</x>
+      <y>158</y>
+      <width>82</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>SCAN</text>
+      <x>10</x>
+      <y>7</y>
+      <width>67</width>
+      <height>19</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Menu Button_1</name>
+      <pv_name>$(P):SFPUpdate-Cmd.SCAN</pv_name>
+      <x>53</x>
+      <y>5</y>
+      <width>115</width>
+      <height>24</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+</display>
