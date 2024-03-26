@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-18 09:47:37 by wang1-->
+<!--Saved on 2024-03-26 12:58:18 by wang1-->
 <display version="2.0.0">
   <name>$(TITLE) EVR$(T) Expert</name>
-  <width>1309</width>
-  <height>1104</height>
+  <width>1400</width>
+  <height>1130</height>
   <actions>
   </actions>
   <grid_step_x>6</grid_step_x>
@@ -122,301 +122,11 @@
     </widget>
   </widget>
   <widget type="group" version="3.0.0">
-    <name>Global</name>
-    <x>1225</x>
-    <y>408</y>
-    <width>174</width>
-    <height>266</height>
-    <style>1</style>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="Header_2_ForeGround" red="255" green="255" blue="255">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color name="Header_2_Background" red="114" green="159" blue="207">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Group_Background" red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label_27</name>
-      <text>Enabled</text>
-      <x>6</x>
-      <y>7</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_21</name>
-      <pv_name>$(P):Ena-Sel</pv_name>
-      <x>91</x>
-      <y>7</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_28</name>
-      <text>Link Status</text>
-      <x>6</x>
-      <y>25</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_22</name>
-      <pv_name>$(P):Link-Sts</pv_name>
-      <x>91</x>
-      <y>25</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_29</name>
-      <text>PLL Status</text>
-      <x>6</x>
-      <y>43</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_23</name>
-      <pv_name>$(P):Pll-Sts</pv_name>
-      <x>91</x>
-      <y>43</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_30</name>
-      <text>Link Err Cnt</text>
-      <x>6</x>
-      <y>97</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_24</name>
-      <pv_name>$(P):CntRxErr-I</pv_name>
-      <x>91</x>
-      <y>97</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_31</name>
-      <text>HBt TIMO Cnt</text>
-      <x>6</x>
-      <y>115</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_25</name>
-      <pv_name>$(P):CntLinkTimo-I</pv_name>
-      <x>91</x>
-      <y>115</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_32</name>
-      <text>Time Status</text>
-      <x>6</x>
-      <y>61</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_26</name>
-      <pv_name>$(P):TimeValid-Sts</pv_name>
-      <x>91</x>
-      <y>61</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_33</name>
-      <text>FIFO OFlw</text>
-      <x>6</x>
-      <y>133</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_27</name>
-      <pv_name>$(P):CntHwOflw-I</pv_name>
-      <x>91</x>
-      <y>133</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_34</name>
-      <text>Sw OFlw</text>
-      <x>6</x>
-      <y>151</y>
-      <width>80</width>
-      <height>17</height>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_28</name>
-      <pv_name>$(P):CntSwOflw-I</pv_name>
-      <x>91</x>
-      <y>151</y>
-      <width>65</width>
-      <height>17</height>
-      <foreground_color>
-        <color name="Read_Foreground" red="0" green="255" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>1</border_width>
-    </widget>
-  </widget>
-  <widget type="group" version="3.0.0">
     <name>Physical Outputs</name>
     <x>620</x>
     <y>408</y>
     <width>414</width>
-    <height>458</height>
+    <height>608</height>
     <style>1</style>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -443,9 +153,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>167</y>
-      <width>388</width>
-      <height>52</height>
+      <y>153</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -461,9 +171,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>116</y>
-      <width>388</width>
-      <height>52</height>
+      <y>83</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -479,9 +189,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>64</y>
-      <width>388</width>
-      <height>52</height>
+      <y>223</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -498,8 +208,8 @@
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
       <y>13</y>
-      <width>388</width>
-      <height>52</height>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -515,9 +225,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>373</y>
-      <width>388</width>
-      <height>52</height>
+      <y>503</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -533,9 +243,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>322</y>
-      <width>388</width>
-      <height>52</height>
+      <y>433</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -551,9 +261,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>270</y>
-      <width>388</width>
-      <height>52</height>
+      <y>363</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -569,9 +279,9 @@
       </macros>
       <file>../evr/_evroutput.bob</file>
       <x>7</x>
-      <y>219</y>
-      <width>388</width>
-      <height>52</height>
+      <y>293</y>
+      <width>392</width>
+      <height>70</height>
       <resize>1</resize>
       <actions>
       </actions>
@@ -1151,9 +861,9 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Event Monitors</name>
-    <x>330</x>
+    <x>306</x>
     <y>786</y>
-    <width>259</width>
+    <width>306</width>
     <height>230</height>
     <style>1</style>
     <font>
@@ -1177,7 +887,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update</name>
       <pv_name>$(P):EvtACnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>7</y>
       <width>62</width>
       <height>19</height>
@@ -1198,7 +908,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtA-SP.OUT</pv_name>
       <x>6</x>
       <y>6</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1215,7 +925,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_1</name>
       <pv_name>$(P):EvtBCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>31</y>
       <width>62</width>
       <height>19</height>
@@ -1236,7 +946,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtB-SP.OUT</pv_name>
       <x>6</x>
       <y>30</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1253,7 +963,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_2</name>
       <pv_name>$(P):EvtCCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>55</y>
       <width>62</width>
       <height>19</height>
@@ -1274,7 +984,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtC-SP.OUT</pv_name>
       <x>6</x>
       <y>54</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1291,7 +1001,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_3</name>
       <pv_name>$(P):EvtDCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>79</y>
       <width>62</width>
       <height>19</height>
@@ -1312,7 +1022,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtD-SP.OUT</pv_name>
       <x>6</x>
       <y>78</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1329,7 +1039,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_4</name>
       <pv_name>$(P):EvtECnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>103</y>
       <width>62</width>
       <height>19</height>
@@ -1350,7 +1060,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtE-SP.OUT</pv_name>
       <x>6</x>
       <y>102</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1367,7 +1077,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_5</name>
       <pv_name>$(P):EvtFCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>127</y>
       <width>62</width>
       <height>19</height>
@@ -1388,7 +1098,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtF-SP.OUT</pv_name>
       <x>6</x>
       <y>126</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1405,7 +1115,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_6</name>
       <pv_name>$(P):EvtGCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>151</y>
       <width>62</width>
       <height>19</height>
@@ -1426,7 +1136,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtG-SP.OUT</pv_name>
       <x>6</x>
       <y>150</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1443,7 +1153,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_7</name>
       <pv_name>$(P):EvtHCnt-I</pv_name>
-      <x>187</x>
+      <x>227</x>
       <y>175</y>
       <width>62</width>
       <height>19</height>
@@ -1464,7 +1174,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):EvtH-SP.OUT</pv_name>
       <x>6</x>
       <y>174</y>
-      <width>169</width>
+      <width>209</width>
       <height>21</height>
       <foreground_color>
         <color name="Write_Foreground" red="0" green="255" blue="255">
@@ -1483,8 +1193,8 @@ $(pv_value)</tooltip>
     <name>Status</name>
     <x>1040</x>
     <y>408</y>
-    <width>181</width>
-    <height>416</height>
+    <width>208</width>
+    <height>608</height>
     <style>1</style>
     <font>
       <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
@@ -1524,7 +1234,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):Ena-Sel</pv_name>
       <x>109</x>
       <y>7</y>
-      <width>64</width>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1557,7 +1267,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):Link-Sts</pv_name>
       <x>109</x>
       <y>31</y>
-      <width>64</width>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1590,7 +1300,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):Pll-Sts</pv_name>
       <x>109</x>
       <y>55</y>
-      <width>64</width>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1623,7 +1333,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):CntRxErr-I</pv_name>
       <x>109</x>
       <y>103</y>
-      <width>64</width>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1655,8 +1365,8 @@ $(pv_value)</tooltip>
       <name>Text Update_12</name>
       <pv_name>$(P):CntLinkTimo-I</pv_name>
       <x>109</x>
-      <y>127</y>
-      <width>64</width>
+      <y>125</y>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1689,7 +1399,7 @@ $(pv_value)</tooltip>
       <pv_name>$(P):TimeValid-Sts</pv_name>
       <x>109</x>
       <y>79</y>
-      <width>64</width>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1706,7 +1416,7 @@ $(pv_value)</tooltip>
       <name>Label_6</name>
       <text>Fw Version</text>
       <x>6</x>
-      <y>151</y>
+      <y>189</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1721,8 +1431,8 @@ $(pv_value)</tooltip>
       <name>Text Update_14</name>
       <pv_name>$(P):FwVer-I</pv_name>
       <x>109</x>
-      <y>151</y>
-      <width>64</width>
+      <y>191</y>
+      <width>84</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1739,7 +1449,7 @@ $(pv_value)</tooltip>
       <name>Label_7</name>
       <text>Sw Version</text>
       <x>6</x>
-      <y>168</y>
+      <y>206</y>
       <width>163</width>
       <height>17</height>
       <horizontal_alignment>1</horizontal_alignment>
@@ -1755,8 +1465,8 @@ $(pv_value)</tooltip>
       <name>Text Update_15</name>
       <pv_name>$(P):SwVer-I</pv_name>
       <x>7</x>
-      <y>185</y>
-      <width>161</width>
+      <y>223</y>
+      <width>186</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1773,7 +1483,7 @@ $(pv_value)</tooltip>
       <name>Label_8</name>
       <text>HW Model</text>
       <x>6</x>
-      <y>211</y>
+      <y>249</y>
       <width>163</width>
       <height>17</height>
       <horizontal_alignment>1</horizontal_alignment>
@@ -1789,8 +1499,8 @@ $(pv_value)</tooltip>
       <name>Text Update_16</name>
       <pv_name>$(P):HwType-I</pv_name>
       <x>7</x>
-      <y>228</y>
-      <width>161</width>
+      <y>266</y>
+      <width>186</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1807,7 +1517,7 @@ $(pv_value)</tooltip>
       <name>Label_9</name>
       <text>Position</text>
       <x>6</x>
-      <y>253</y>
+      <y>291</y>
       <width>84</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1822,8 +1532,8 @@ $(pv_value)</tooltip>
       <name>Text Update_17</name>
       <pv_name>$(P):Pos-I</pv_name>
       <x>67</x>
-      <y>253</y>
-      <width>101</width>
+      <y>291</y>
+      <width>126</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1840,7 +1550,7 @@ $(pv_value)</tooltip>
       <name>Label_10</name>
       <text>IRQ Rate</text>
       <x>6</x>
-      <y>282</y>
+      <y>320</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1855,8 +1565,8 @@ $(pv_value)</tooltip>
       <name>Text Update_18</name>
       <pv_name>$(P):RateIRQ-I</pv_name>
       <x>109</x>
-      <y>282</y>
-      <width>64</width>
+      <y>320</y>
+      <width>85</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1873,7 +1583,7 @@ $(pv_value)</tooltip>
       <name>Label_11</name>
       <text>FIFO Rate</text>
       <x>6</x>
-      <y>308</y>
+      <y>346</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1888,8 +1598,8 @@ $(pv_value)</tooltip>
       <name>Text Update_19</name>
       <pv_name>$(P):RateFIFOEvt-I</pv_name>
       <x>109</x>
-      <y>308</y>
-      <width>64</width>
+      <y>346</y>
+      <width>85</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1906,8 +1616,8 @@ $(pv_value)</tooltip>
       <name>Text Update_20</name>
       <pv_name>$(P):RateFIFOLoop-I</pv_name>
       <x>109</x>
-      <y>331</y>
-      <width>64</width>
+      <y>369</y>
+      <width>85</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1924,7 +1634,7 @@ $(pv_value)</tooltip>
       <name>Label_12</name>
       <text>FIFO Loop Rate</text>
       <x>6</x>
-      <y>331</y>
+      <y>369</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1939,7 +1649,7 @@ $(pv_value)</tooltip>
       <name>Label_13</name>
       <text>Evt Avg of FIFO</text>
       <x>6</x>
-      <y>356</y>
+      <y>394</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1954,8 +1664,8 @@ $(pv_value)</tooltip>
       <name>Text Update_29</name>
       <pv_name>$(P):FIFOCap-I</pv_name>
       <x>109</x>
-      <y>356</y>
-      <width>64</width>
+      <y>394</y>
+      <width>85</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1973,7 +1683,7 @@ $(pv_value)</tooltip>
       <name>Label_14</name>
       <text>Commit Hash</text>
       <x>6</x>
-      <y>378</y>
+      <y>416</y>
       <width>103</width>
       <height>17</height>
       <vertical_alignment>1</vertical_alignment>
@@ -1988,14 +1698,177 @@ $(pv_value)</tooltip>
       <name>Text Update_31</name>
       <pv_name>$(P):CommitHash-I</pv_name>
       <x>109</x>
-      <y>378</y>
-      <width>64</width>
+      <y>416</y>
+      <width>85</width>
       <height>17</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
         </color>
       </foreground_color>
       <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_33</name>
+      <text>FIFO OFlw</text>
+      <x>6</x>
+      <y>149</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_34</name>
+      <text>Sw OFlw</text>
+      <x>6</x>
+      <y>167</y>
+      <width>80</width>
+      <height>17</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_28</name>
+      <pv_name>$(P):CntSwOflw-I</pv_name>
+      <x>109</x>
+      <y>169</y>
+      <width>85</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_27</name>
+      <pv_name>$(P):CntHwOflw-I</pv_name>
+      <x>109</x>
+      <y>147</y>
+      <width>85</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>Requested Freq</text>
+      <x>6</x>
+      <y>457</y>
+      <width>112</width>
+      <height>19</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>Actual Freq</text>
+      <x>6</x>
+      <y>484</y>
+      <width>112</width>
+      <height>19</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_27</name>
+      <text>Clk Err</text>
+      <x>6</x>
+      <y>511</y>
+      <width>112</width>
+      <height>19</height>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input_11</name>
+      <pv_name>$(P):LinkClk-SP</pv_name>
+      <x>109</x>
+      <y>457</y>
+      <width>86</width>
+      <height>19</height>
+      <foreground_color>
+        <color name="Write_Foreground" red="0" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_25</name>
+      <pv_name>$(P):LinkClk-I</pv_name>
+      <x>110</x>
+      <y>485</y>
+      <width>84</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_26</name>
+      <pv_name>$(P):LinkClkErr-I</pv_name>
+      <x>110</x>
+      <y>512</y>
+      <width>84</width>
+      <height>17</height>
+      <foreground_color>
+        <color name="Read_Foreground" red="0" green="255" blue="0">
+        </color>
+      </foreground_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
