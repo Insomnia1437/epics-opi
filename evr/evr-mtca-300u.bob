@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-26 09:11:14 by wang1-->
+<!--Saved on 2024-04-10 13:16:09 by wang1-->
 <display version="2.0.0">
   <name>$(TITLE)</name>
   <macros>
@@ -1286,7 +1286,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Input_10</name>
-      <pv_name>$(P):1hzFwd-SP</pv_name>
+      <pv_name>$(P):PpsFwd-SP</pv_name>
       <x>277</x>
       <y>12</y>
       <width>67</width>
@@ -1304,7 +1304,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_21</name>
-      <text>1hz Fwd</text>
+      <text>Pps Fwd</text>
       <x>185</x>
       <y>13</y>
       <width>92</width>
