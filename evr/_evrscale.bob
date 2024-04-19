@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-15 11:39:12 by wang1-->
+<!--Saved on 2024-04-19 15:55:43 by wang1-->
 <display version="2.0.0">
   <name>Display</name>
   <widget type="label" version="2.0.0">
@@ -63,6 +63,7 @@
       <color name="Read_Foreground" red="0" green="255" blue="0">
       </color>
     </foreground_color>
+    <precision>4</precision>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>

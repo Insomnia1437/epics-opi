@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-03-18 09:39:37 by wang1-->
+<!--Saved on 2024-04-19 15:36:18 by wang1-->
 <display version="2.0.0">
   <name>$(TITLE) Expert</name>
   <width>847</width>
-  <height>620</height>
+  <height>606</height>
   <actions>
   </actions>
   <grid_step_x>6</grid_step_x>
@@ -359,7 +359,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Status</name>
-    <x>474</x>
+    <x>278</x>
     <y>34</y>
     <width>181</width>
     <height>416</height>
@@ -883,8 +883,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>SFP</name>
-    <x>284</x>
-    <y>34</y>
+    <x>12</x>
+    <y>392</y>
     <width>177</width>
     <height>214</height>
     <style>1</style>
@@ -1198,9 +1198,9 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Event Monitors</name>
-    <x>12</x>
-    <y>390</y>
-    <width>259</width>
+    <x>463</x>
+    <y>34</y>
+    <width>369</width>
     <height>230</height>
     <style>1</style>
     <font>
@@ -1226,7 +1226,7 @@
       <pv_name>$(P):EvtACnt-I</pv_name>
       <x>187</x>
       <y>7</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1264,7 +1264,7 @@
       <pv_name>$(P):EvtBCnt-I</pv_name>
       <x>187</x>
       <y>31</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1302,7 +1302,7 @@
       <pv_name>$(P):EvtCCnt-I</pv_name>
       <x>187</x>
       <y>55</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1340,7 +1340,7 @@
       <pv_name>$(P):EvtDCnt-I</pv_name>
       <x>187</x>
       <y>79</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1378,7 +1378,7 @@
       <pv_name>$(P):EvtECnt-I</pv_name>
       <x>187</x>
       <y>103</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1416,7 +1416,7 @@
       <pv_name>$(P):EvtFCnt-I</pv_name>
       <x>187</x>
       <y>127</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1454,7 +1454,7 @@
       <pv_name>$(P):EvtGCnt-I</pv_name>
       <x>187</x>
       <y>151</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1492,7 +1492,7 @@
       <pv_name>$(P):EvtHCnt-I</pv_name>
       <x>187</x>
       <y>175</y>
-      <width>62</width>
+      <width>87</width>
       <height>19</height>
       <foreground_color>
         <color name="Read_Foreground" red="0" green="255" blue="0">
@@ -1525,11 +1525,139 @@
         </color>
       </border_color>
     </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtBCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>31</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_6</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtGCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>150</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtACnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>7</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_3</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtDCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>79</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtECnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>102</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtFCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>126</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_8</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtCCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>55</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_7</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P):EvtHCnt-I</pv_name>
+          <value>0</value>
+          <description>Reset Event Counter</description>
+        </action>
+      </actions>
+      <text>Reset</text>
+      <x>281</x>
+      <y>174</y>
+      <width>74</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
   <widget type="group" version="3.0.0">
     <name>Mappings</name>
-    <x>666</x>
-    <y>34</y>
+    <x>278</x>
+    <y>466</y>
     <width>181</width>
     <height>117</height>
     <style>1</style>
@@ -1669,8 +1797,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Delay Compensation</name>
-    <x>282</x>
-    <y>269</y>
+    <x>463</x>
+    <y>281</y>
     <width>181</width>
     <height>230</height>
     <style>1</style>
@@ -1951,8 +2079,8 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Software Event</name>
-    <x>666</x>
-    <y>267</y>
+    <x>651</x>
+    <y>281</y>
     <width>181</width>
     <height>181</height>
     <style>1</style>
