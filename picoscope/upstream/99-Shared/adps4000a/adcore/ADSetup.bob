@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ADSetup</name>
+  <x>251</x>
+  <y>367</y>
+  <width>400</width>
+  <height>280</height>
+  <background_color>
+    <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_color>
+    <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+    </color>
+  </grid_color>
+  <widget type="group" version="2.0.0">
+    <name>Setup</name>
+    <width>400</width>
+    <height>280</height>
+    <style>3</style>
+    <background_color>
+      <color red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>MGGrey03-background</name>
+      <width>400</width>
+      <height>280</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>MGGrey03-title</name>
+      <text>Setup</text>
+      <width>400</width>
+      <height>29</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>2</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_4</name>
+      <class>GROUP</class>
+      <x>30</x>
+      <y>162</y>
+      <width>330</width>
+      <height>69</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>3</corner_width>
+      <corner_height>3</corner_height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_57</name>
+      <pv_name>$(P)$(R)PortName_RBV</pv_name>
+      <x>151</x>
+      <y>42</y>
+      <width>190</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_58</name>
+      <pv_name>$(P)$(R)Manufacturer_RBV</pv_name>
+      <x>151</x>
+      <y>102</y>
+      <width>190</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_59</name>
+      <pv_name>$(P)$(R)Model_RBV</pv_name>
+      <x>151</x>
+      <y>132</y>
+      <width>190</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_35</name>
+      <text>asyn port</text>
+      <x>11</x>
+      <y>42</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_36</name>
+      <text>EPICS name</text>
+      <x>11</x>
+      <y>72</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_37</name>
+      <text>Manufacturer</text>
+      <x>11</x>
+      <y>102</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_38</name>
+      <text>Model</text>
+      <x>11</x>
+      <y>132</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_39</name>
+      <text>Connection</text>
+      <x>11</x>
+      <y>182</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_40</name>
+      <text>Debugging</text>
+      <x>11</x>
+      <y>241</y>
+      <width>130</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Text Update_117</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)$(R)AsynIO.CNCT</pv_name>
+          <value>1</value>
+          <description>Connect</description>
+        </action>
+      </actions>
+      <x>151</x>
+      <y>172</y>
+      <width>90</width>
+      <height>20</height>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(pv_value)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Text Update_118</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)$(R)AsynIO.CNCT</pv_name>
+          <value>0</value>
+          <description>Disconnect</description>
+        </action>
+      </actions>
+      <x>251</x>
+      <y>172</y>
+      <width>90</width>
+      <height>20</height>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Disconnected</text>
+      <x>151</x>
+      <y>202</y>
+      <width>190</width>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="connection" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>Connected</value>
+          </exp>
+          <exp bool_exp="!pv0==1">
+            <value>Disconnected</value>
+          </exp>
+          <pv_name>$(P)$(R)AsynIO.CNCT</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Text Update_61</name>
+      <text>$(P)$(R)</text>
+      <x>151</x>
+      <y>72</y>
+      <width>190</width>
+      <background_color>
+        <color name="Read_Background" red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="open_display">
+          <file>save_restoreStatus_more.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>251</x>
+      <y>241</y>
+      <width>90</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Asyn</name>
+      <actions>
+        <action type="open_display">
+          <file>../../../asyn/bob/asynRecord.bob</file>
+          <target>window</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <x>151</x>
+      <y>241</y>
+      <width>90</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>

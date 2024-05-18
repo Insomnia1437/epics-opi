@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ADAttrFile</name>
+  <width>400</width>
+  <height>70</height>
+  <background_color>
+    <color red="200" green="205" blue="201" alpha="0">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Buffers</name>
+    <width>400</width>
+    <height>70</height>
+    <style>3</style>
+    <background_color>
+      <color red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>MGGrey03-background</name>
+      <width>400</width>
+      <height>70</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>MGGrey03-title</name>
+      <text>Property</text>
+      <width>400</width>
+      <height>29</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>2</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(P)$(R)NDAttributesFile</pv_name>
+      <x>70</x>
+      <y>29</y>
+      <width>320</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>File</text>
+      <x>10</x>
+      <y>29</y>
+      <width>40</width>
+      <horizontal_alignment>2</horizontal_alignment>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ADBuffers</name>
+  <x>603</x>
+  <y>111</y>
+  <width>400</width>
+  <height>165</height>
+  <background_color>
+    <color name="Gray_4" red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Buffers</name>
+    <width>400</width>
+    <height>165</height>
+    <style>3</style>
+    <background_color>
+      <color red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>MGGrey03-background</name>
+      <width>400</width>
+      <height>165</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>MGGrey03-title</name>
+      <text>Buffers</text>
+      <width>400</width>
+      <height>29</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>2</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_28</name>
+      <text>Buffers max/used</text>
+      <x>16</x>
+      <y>40</y>
+      <width>165</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_29</name>
+      <text>Buffers alloc/free</text>
+      <x>16</x>
+      <y>70</y>
+      <width>165</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_30</name>
+      <text>Memory max/used (MB)</text>
+      <x>16</x>
+      <y>100</y>
+      <width>165</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_31</name>
+      <text>Buffer &amp; memory polling</text>
+      <x>16</x>
+      <y>130</y>
+      <width>165</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_52</name>
+      <pv_name>$(P)$(R)PoolMaxBuffers</pv_name>
+      <x>203</x>
+      <y>40</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_55</name>
+      <pv_name>$(P)$(R)PoolUsedBuffers</pv_name>
+      <x>300</x>
+      <y>40</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_56</name>
+      <pv_name>$(P)$(R)PoolAllocBuffers</pv_name>
+      <x>203</x>
+      <y>70</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_57</name>
+      <pv_name>$(P)$(R)PoolFreeBuffers</pv_name>
+      <x>300</x>
+      <y>70</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_58</name>
+      <pv_name>$(P)$(R)PoolMaxMem</pv_name>
+      <x>203</x>
+      <y>100</y>
+      <width>80</width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_59</name>
+      <pv_name>$(P)$(R)PoolUsedMem</pv_name>
+      <x>300</x>
+      <y>100</y>
+      <width>80</width>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_4</name>
+      <pv_name>$(P)$(R)PoolUsedMem.SCAN</pv_name>
+      <x>203</x>
+      <y>130</y>
+      <width>110</width>
+      <height>20</height>
+    </widget>
+  </widget>
+</display>

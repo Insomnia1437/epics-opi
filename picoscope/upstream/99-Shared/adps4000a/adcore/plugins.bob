@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Channel $(N)</name>
+  <width>1240</width>
+  <height>800</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Titlebar</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1240</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title</name>
+    <class>TITLE</class>
+    <text>Channel $(N)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>560</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>MGGrey02</name>
+    <x>20</x>
+    <y>70</y>
+    <width>280</width>
+    <height>210</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>MGGrey02-title</name>
+      <text>Click to edit Title</text>
+      <x>10</x>
+      <width>260</width>
+      <height>30</height>
+      <font>
+        <font name="SUBSUB-GROUP-HEADER" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey01</name>
+    <x>370</x>
+    <y>70</y>
+    <width>870</width>
+    <height>1250</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey01-titlebar</name>
+      <width>870</width>
+      <height>1230</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="xyplot" version="2.0.0">
+      <name>XY Graph_1</name>
+      <x>20</x>
+      <y>426</y>
+      <width>830</width>
+      <height>390</height>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <title>PROC Data</title>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <show_toolbar>true</show_toolbar>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="buffer_size" prop_id="trace_0_buffer_size" out_exp="true">
+          <exp bool_exp="true">
+            <expression>pv0</expression>
+          </exp>
+          <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+        </rule>
+        <rule name="data_y_max" prop_id="axis_1_maximum" out_exp="true">
+          <exp bool_exp="true">
+            <expression>pv0</expression>
+          </exp>
+          <pv_name>$(P)$(R)ArraySize1_RBV</pv_name>
+        </rule>
+        <rule name="data_x0_max" prop_id="axis_0_maximum" out_exp="true">
+          <exp bool_exp="true">
+            <expression>pv0</expression>
+          </exp>
+          <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+        </rule>
+      </rules>
+      <x_axis>
+        <title>Samples</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>ADC counts</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv>$(P)$(R)$(N)-TRC2-ArrayTimeUs</x_pv>
+          <y_pv>$(P)$(R)$(N)-TRC2-ArrayData</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="21" green="21" blue="196">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>MGGrey02-background</name>
+    <x>20</x>
+    <y>70</y>
+    <width>320</width>
+    <height>1220</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <PATH>NDProcess.bob</PATH>
+      <PLUGIN>PROC</PLUGIN>
+      <R>$(R)$(N)-Proc1:</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>390</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>BGGrey01-title_1</name>
+    <text>Plugins</text>
+    <x>50</x>
+    <y>70</y>
+    <width>260</width>
+    <height>30</height>
+    <font>
+      <font name="SUBSUB-GROUP-HEADER" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph</name>
+    <x>390</x>
+    <y>90</y>
+    <width>830</width>
+    <height>390</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>Raw Data</title>
+    <title_font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="buffer_size" prop_id="trace_0_buffer_size" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+      </rule>
+      <rule name="data_y_max" prop_id="axis_1_maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize1_RBV</pv_name>
+      </rule>
+      <rule name="data_x0_max" prop_id="axis_0_maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+      </rule>
+    </rules>
+    <x_axis>
+      <title>Samples</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>100.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>ADC counts</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv>$(P)$(R)$(N)-TRC1-ArrayTimeUs</x_pv>
+        <y_pv>$(P)$(R)$(N)-TRC1-ArrayData</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="21" green="21" blue="196">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <macros>
+      <PATH>NDStats_full.bob</PATH>
+      <PLUGIN>STASTS1</PLUGIN>
+      <R>$(R)$(N)-Stats1:</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>1110</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <macros>
+      <PATH>../admisc/NDTrace.bob</PATH>
+      <PLUGIN>NDTRace 3 (Graph 3)</PLUGIN>
+      <R>$(R)$(N)-TRC3-</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>930</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <macros>
+      <PATH>../admisc/NDTrace.bob</PATH>
+      <PLUGIN>NDTRace 1 (Graph 1)</PLUGIN>
+      <R>$(R)$(N)-TRC1-</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>210</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <macros>
+      <PATH>NDROI_full.bob</PATH>
+      <PLUGIN>ROI</PLUGIN>
+      <R>$(R)$(N)-ROI:</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>750</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Channel
+     |---NDTRace 1
+     |---PROC
+            |---NDTRace 2
+            |---ROI1
+                   |---NDTRace 3
+                   |---NDStats</text>
+    <x>30</x>
+    <y>83</y>
+    <width>320</width>
+    <height>160</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="11.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_11</name>
+    <macros>
+      <PATH>../admisc/NDTrace.bob</PATH>
+      <PLUGIN>NDTRace 2 (Graph 2)</PLUGIN>
+      <R>$(R)$(N)-TRC2-</R>
+    </macros>
+    <file>plugin.bob</file>
+    <x>40</x>
+    <y>570</y>
+    <width>290</width>
+    <height>170</height>
+  </widget>
+  <widget type="xyplot" version="2.0.0">
+    <name>XY Graph_2</name>
+    <x>390</x>
+    <y>900</y>
+    <width>830</width>
+    <height>390</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <title>ROI Data</title>
+    <title_font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="buffer_size" prop_id="trace_0_buffer_size" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+      </rule>
+      <rule name="data_y_max" prop_id="axis_1_maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize1_RBV</pv_name>
+      </rule>
+      <rule name="data_x0_max" prop_id="axis_0_maximum" out_exp="true">
+        <exp bool_exp="true">
+          <expression>pv0</expression>
+        </exp>
+        <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+      </rule>
+    </rules>
+    <x_axis>
+      <title>Samples</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>100.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title>ADC counts</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>$(traces[0].y_pv)</name>
+        <x_pv>$(P)$(R)$(N)-TRC3-ArrayTimeUs</x_pv>
+        <y_pv>$(P)$(R)$(N)-TRC3-ArrayData</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color red="21" green="21" blue="196">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <line_style>0</line_style>
+        <point_type>0</point_type>
+        <point_size>4</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+</display>

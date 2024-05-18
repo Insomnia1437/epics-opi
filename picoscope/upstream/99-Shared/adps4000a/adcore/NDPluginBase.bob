@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>NDPluginBase</name>
+  <x>656</x>
+  <y>170</y>
+  <width>380</width>
+  <height>555</height>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <width>380</width>
+    <height>555</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)PortName_RBV</pv_name>
+    <x>167</x>
+    <y>5</y>
+    <width>160</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>asyn port</text>
+    <x>67</x>
+    <y>4</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Plugin type</text>
+    <x>47</x>
+    <y>29</y>
+    <width>110</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)PluginType_RBV</pv_name>
+    <x>167</x>
+    <y>30</y>
+    <width>160</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>ADCore version</text>
+    <x>17</x>
+    <y>54</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ADCoreVersion_RBV</pv_name>
+    <x>167</x>
+    <y>55</y>
+    <width>160</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Plugin version</text>
+    <x>17</x>
+    <y>78</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)DriverVersion_RBV</pv_name>
+    <x>167</x>
+    <y>79</y>
+    <width>160</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)NDArrayAddress</pv_name>
+    <x>167</x>
+    <y>129</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)NDArrayAddress_RBV</pv_name>
+    <x>273</x>
+    <y>130</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array address</text>
+    <x>27</x>
+    <y>129</y>
+    <width>130</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array port</text>
+    <x>57</x>
+    <y>104</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)NDArrayPort</pv_name>
+    <x>167</x>
+    <y>104</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)NDArrayPort_RBV</pv_name>
+    <x>273</x>
+    <y>105</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Min. time</text>
+    <x>67</x>
+    <y>179</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)MinCallbackTime</pv_name>
+    <x>167</x>
+    <y>179</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MinCallbackTime_RBV</pv_name>
+    <x>273</x>
+    <y>180</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Enable</text>
+    <x>97</x>
+    <y>154</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)EnableCallbacks</pv_name>
+    <x>167</x>
+    <y>154</y>
+    <height>20</height>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)EnableCallbacks_RBV</pv_name>
+    <x>273</x>
+    <y>155</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)DroppedArrays_RBV</pv_name>
+    <x>273</x>
+    <y>305</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Dropped arrays</text>
+    <x>17</x>
+    <y>304</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array Size</text>
+    <x>57</x>
+    <y>354</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArraySize0_RBV</pv_name>
+    <x>167</x>
+    <y>355</y>
+    <width>65</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArraySize1_RBV</pv_name>
+    <x>237</x>
+    <y>355</y>
+    <width>65</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Data type</text>
+    <x>67</x>
+    <y>379</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)DataType_RBV</pv_name>
+    <x>167</x>
+    <y>380</y>
+    <width>79</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># dimensions</text>
+    <x>37</x>
+    <y>329</y>
+    <width>120</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)NDimensions_RBV</pv_name>
+    <x>167</x>
+    <y>330</y>
+    <width>79</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArraySize2_RBV</pv_name>
+    <x>307</x>
+    <y>355</y>
+    <width>65</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Color mode</text>
+    <x>57</x>
+    <y>404</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ColorMode_RBV</pv_name>
+    <x>167</x>
+    <y>405</y>
+    <width>79</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Execution time</text>
+    <x>17</x>
+    <y>279</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ExecutionTime_RBV</pv_name>
+    <x>167</x>
+    <y>280</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>msec</text>
+    <x>273</x>
+    <y>279</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayCounter_RBV</pv_name>
+    <x>273</x>
+    <y>230</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array counter</text>
+    <x>27</x>
+    <y>229</y>
+    <width>130</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array rate</text>
+    <x>57</x>
+    <y>254</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayRate_RBV</pv_name>
+    <x>167</x>
+    <y>255</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Unique ID</text>
+    <x>67</x>
+    <y>429</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)UniqueId_RBV</pv_name>
+    <x>167</x>
+    <y>430</y>
+    <width>79</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)ArrayCounter</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)ArrayCounter</pv_name>
+    <text>Reset to 0</text>
+    <x>167</x>
+    <y>229</y>
+    <height>20</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)DroppedArrays</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)DroppedArrays</pv_name>
+    <text>Reset to 0</text>
+    <x>167</x>
+    <y>304</y>
+    <height>20</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Queue size/free</text>
+    <x>7</x>
+    <y>204</y>
+    <width>150</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)QueueFree</pv_name>
+    <x>273</x>
+    <y>204</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)QueueSize</pv_name>
+    <x>167</x>
+    <y>204</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)TimeStamp_RBV</pv_name>
+    <x>167</x>
+    <y>455</y>
+    <width>150</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Time stamp</text>
+    <x>57</x>
+    <y>454</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array callbacks</text>
+    <x>7</x>
+    <y>479</y>
+    <width>150</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDPluginBaseFull.opi</file>
+        <target>tab</target>
+        <description>NDPluginBase Full</description>
+      </action>
+      <action type="open_display">
+        <file>asynRecord.opi</file>
+        <macros>
+          <R>$(R)AsynIO</R>
+        </macros>
+        <target>tab</target>
+        <description>asynRecord</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>167</x>
+    <y>529</y>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>More</text>
+    <x>117</x>
+    <y>529</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ArrayCallbacks</pv_name>
+    <x>167</x>
+    <y>479</y>
+    <height>20</height>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayCallbacks_RBV</pv_name>
+    <x>273</x>
+    <y>480</y>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Process plugin</text>
+    <x>17</x>
+    <y>504</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)ProcessPlugin</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)ProcessPlugin</pv_name>
+    <text>Process</text>
+    <x>167</x>
+    <y>504</y>
+    <height>20</height>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

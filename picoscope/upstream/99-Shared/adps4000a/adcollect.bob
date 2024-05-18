@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ADCollect</name>
+  <x>44</x>
+  <y>221</y>
+  <width>420</width>
+  <height>670</height>
+  <background_color>
+    <color red="200" green="205" blue="201">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <width>420</width>
+    <height>670</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>72</x>
+    <y>3</y>
+    <width>275</width>
+    <height>21</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)ArrayCounter</pv_name>
+    <x>180</x>
+    <y>401</y>
+    <width>85</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Image counter</text>
+    <x>14</x>
+    <y>401</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayCounter_RBV</pv_name>
+    <x>289</x>
+    <y>402</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Status</text>
+    <x>14</x>
+    <y>351</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)StatusMessageR</pv_name>
+    <x>72</x>
+    <y>374</y>
+    <width>275</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Collect</text>
+    <x>130</x>
+    <y>3</y>
+    <width>157</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Data type</text>
+    <x>14</x>
+    <y>222</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_1</name>
+    <pv_name>$(P)$(R)DataType</pv_name>
+    <x>183</x>
+    <y>222</y>
+    <width>80</width>
+    <height>20</height>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ioc_write_bg" red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>$(P)$(R)DataType_RBV</pv_name>
+    <x>289</x>
+    <y>223</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Nr. pre trig samples</text>
+    <x>14</x>
+    <y>126</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)NumPreTrigSamples</pv_name>
+    <x>181</x>
+    <y>126</y>
+    <width>106</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)NumPreTrigSamplesR</pv_name>
+    <x>289</x>
+    <y>127</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>Time tick</text>
+    <x>14</x>
+    <y>55</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>$(P)$(R)TickValueR</pv_name>
+    <x>289</x>
+    <y>56</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>Nr. post trig samples</text>
+    <x>14</x>
+    <y>150</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_2</name>
+    <pv_name>$(P)$(R)NumPostTrigSamples</pv_name>
+    <x>181</x>
+    <y>150</y>
+    <width>106</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>$(P)$(R)NumPostTrigSamplesR</pv_name>
+    <x>289</x>
+    <y>151</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>$(P)$(R)NumTotalSamplesR</pv_name>
+    <x>289</x>
+    <y>176</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Total nr. samples</text>
+    <x>14</x>
+    <y>175</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>$(P)$(R)NumMaxSamplesR</pv_name>
+    <x>289</x>
+    <y>200</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>Max. nr. samples</text>
+    <x>14</x>
+    <y>199</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>Trigger repeat</text>
+    <x>14</x>
+    <y>247</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button_1</name>
+    <pv_name>$(P)$(R)TrigRepeat</pv_name>
+    <x>183</x>
+    <y>247</y>
+    <width>80</width>
+    <height>20</height>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ioc_write_bg" red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_9</name>
+    <pv_name>$(P)$(R)TrigRepeatR</pv_name>
+    <x>289</x>
+    <y>248</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>Sampling Freq.</text>
+    <x>14</x>
+    <y>31</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input_3</name>
+    <pv_name>$(P)$(R)SamplingFreq</pv_name>
+    <x>180</x>
+    <y>31</y>
+    <width>106</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_10</name>
+    <pv_name>$(P)$(R)SamplingFreqR</pv_name>
+    <x>289</x>
+    <y>32</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>2</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)TimeBaseR</pv_name>
+    <x>289</x>
+    <y>80</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Time base</text>
+    <x>14</x>
+    <y>79</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Maximum value</text>
+    <x>14</x>
+    <y>511</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_12</name>
+    <pv_name>$(P)$(R)MaximumValueR</pv_name>
+    <x>289</x>
+    <y>512</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Minimum value</text>
+    <x>14</x>
+    <y>538</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>$(P)$(R)MinimumValueR</pv_name>
+    <x>289</x>
+    <y>539</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Trigger Enabled</text>
+    <x>14</x>
+    <y>564</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>$(P)$(R)TrigEnabledR</pv_name>
+    <x>289</x>
+    <y>565</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_16</name>
+    <text>PWQ Enabled</text>
+    <x>14</x>
+    <y>590</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_15</name>
+    <pv_name>$(P)$(R)PulseWidthQualifierEnabledR</pv_name>
+    <x>289</x>
+    <y>591</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Maximum segments</text>
+    <x>14</x>
+    <y>485</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(P)$(R)MaximumSegmentsR</pv_name>
+    <x>289</x>
+    <y>486</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="Gray_4" red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayCallbacks_RBV</pv_name>
+    <x>289</x>
+    <y>455</y>
+    <width>110</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ArrayCallbacks</pv_name>
+    <x>172</x>
+    <y>454</y>
+    <width>90</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Array callbacks</text>
+    <x>14</x>
+    <y>454</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Image rate</text>
+    <x>14</x>
+    <y>426</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ArrayRate_RBV</pv_name>
+    <x>180</x>
+    <y>427</y>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Done</text>
+    <x>223</x>
+    <y>281</y>
+    <width>40</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="40" green="147" blue="21">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="!(pv0==0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(R)Acquire</pv_name>
+      </rule>
+    </rules>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Collecting</text>
+    <x>194</x>
+    <y>281</y>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0!=0">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="!(pv0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(P)$(R)Acquire</pv_name>
+      </rule>
+    </rules>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)Acquire</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)Acquire</pv_name>
+    <text>Start</text>
+    <x>180</x>
+    <y>301</y>
+    <width>59</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)Acquire</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)Acquire</pv_name>
+    <text>Stop</text>
+    <x>247</x>
+    <y>301</y>
+    <width>59</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Acquire</text>
+    <x>14</x>
+    <y>301</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Detector state</text>
+    <x>14</x>
+    <y>326</y>
+    <width>160</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)DetectorStateR</pv_name>
+    <x>180</x>
+    <y>326</y>
+    <width>158</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>btnChannels</name>
+    <actions>
+      <action type="open_display">
+        <file>channels.bob</file>
+        <target>tab</target>
+      </action>
+    </actions>
+    <text>Channels</text>
+    <x>232</x>
+    <y>630</y>
+    <width>140</width>
+    <height>28</height>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_24</name>
+    <text>Setup Channels</text>
+    <x>14</x>
+    <y>633</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

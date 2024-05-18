@@ -1,0 +1,3417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>NDStats</name>
+  <x>180</x>
+  <y>122</y>
+  <width>1120</width>
+  <height>675</height>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>390</x>
+    <y>35</y>
+    <width>360</width>
+    <height>235</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>755</x>
+    <y>40</y>
+    <width>360</width>
+    <height>200</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>390</x>
+    <y>280</y>
+    <width>360</width>
+    <height>305</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>755</x>
+    <y>245</y>
+    <width>360</width>
+    <height>230</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Read_Background" red="230" green="235" blue="232">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>NDPluginBase.bob</file>
+    <y>91</y>
+    <width>380</width>
+    <height>555</height>
+    <resize>4</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>390</x>
+    <y>590</y>
+    <width>360</width>
+    <height>80</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Reset</text>
+      <x>155</x>
+      <y>2</y>
+      <width>50</width>
+      <font>
+        <font family="Sans" style="BOLD" size="11.0">
+        </font>
+      </font>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Reset</text>
+      <x>135</x>
+      <y>29</y>
+      <width>50</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="10.891089108910892">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Menu Button</name>
+      <actions>
+        <action type="open_display">
+          <file>yySseq_full.opi</file>
+          <macros>
+            <S>$(R)Reset</S>
+          </macros>
+          <target>tab</target>
+          <description>Reset</description>
+        </action>
+        <action type="open_display">
+          <file>yySseq_full.opi</file>
+          <macros>
+            <S>$(R)Reset1</S>
+          </macros>
+          <target>tab</target>
+          <description>Reset1</description>
+        </action>
+        <action type="open_display">
+          <file>yySseq_full.opi</file>
+          <macros>
+            <S>$(R)Reset2</S>
+          </macros>
+          <target>tab</target>
+          <description>Reset2</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>196</x>
+      <y>54</y>
+      <width>60</width>
+      <height>20</height>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Configure</text>
+      <x>95</x>
+      <y>54</y>
+      <width>90</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="10.891089108910892">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P)$(R)Reset.PROC</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P)$(R)Reset.PROC</pv_name>
+      <text>Reset</text>
+      <x>196</x>
+      <y>29</y>
+      <width>60</width>
+      <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Statistics</text>
+    <x>519</x>
+    <y>44</y>
+    <font>
+      <font family="Sans" style="BOLD" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ComputeStatistics</pv_name>
+    <x>584</x>
+    <y>72</y>
+    <width>60</width>
+    <height>18</height>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ComputeStatistics_RBV</pv_name>
+    <x>650</x>
+    <y>72</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Compute statistics</text>
+    <x>395</x>
+    <y>71</y>
+    <width>180</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Background width</text>
+    <x>414</x>
+    <y>96</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)BgdWidth</pv_name>
+    <x>583</x>
+    <y>96</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)BgdWidth_RBV</pv_name>
+    <x>649</x>
+    <y>97</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Cursor X</text>
+    <x>860</x>
+    <y>143</y>
+    <width>80</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>Scrollbar</name>
+    <pv_name>$(P)$(R)CursorX</pv_name>
+    <x>949</x>
+    <y>143</y>
+    <width>160</width>
+    <actions>
+    </actions>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)CursorX</pv_name>
+    <x>949</x>
+    <y>121</y>
+    <width>60</width>
+    <height>19</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CursorX_RBV</pv_name>
+    <x>1014</x>
+    <y>121</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Cursor Y</text>
+    <x>860</x>
+    <y>188</y>
+    <width>80</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="scrollbar" version="2.0.0">
+    <name>Scrollbar</name>
+    <pv_name>$(P)$(R)CursorY</pv_name>
+    <x>949</x>
+    <y>188</y>
+    <width>160</width>
+    <actions>
+    </actions>
+    <bar_length>1.0</bar_length>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)CursorY</pv_name>
+    <x>949</x>
+    <y>166</y>
+    <width>60</width>
+    <height>19</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CursorY_RBV</pv_name>
+    <x>1014</x>
+    <y>166</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ComputeProfiles</pv_name>
+    <x>949</x>
+    <y>72</y>
+    <width>60</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ComputeProfiles_RBV</pv_name>
+    <x>1015</x>
+    <y>72</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Compute profiles</text>
+    <x>780</x>
+    <y>71</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Size X</text>
+    <x>799</x>
+    <y>96</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ProfileSizeX_RBV</pv_name>
+    <x>863</x>
+    <y>97</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ProfileSizeY_RBV</pv_name>
+    <x>1015</x>
+    <y>97</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Y</text>
+    <x>999</x>
+    <y>96</y>
+    <width>10</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Profiles</text>
+    <x>894</x>
+    <y>45</y>
+    <width>80</width>
+    <font>
+      <font family="Sans" style="BOLD" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileAverageX_RBV</DATA>
+          <TITLE>AverageX</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Average X</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileAverageY_RBV</DATA>
+          <TITLE>AverageY</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Average Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileThresholdX_RBV</DATA>
+          <TITLE>ThresholdX</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Threshold X</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileThresholdY_RBV</DATA>
+          <TITLE>ThresholdY</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Threshold Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileCentroidX_RBV</DATA>
+          <TITLE>CentroidX</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Centroid X</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileCentroidY_RBV</DATA>
+          <TITLE>CentroidY</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Centroid Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileCursorX_RBV</DATA>
+          <TITLE>CursorX</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Cursor X</description>
+      </action>
+      <action type="open_display">
+        <file>NDPlot.opi</file>
+        <macros>
+          <DATA>ProfileCursorY_RBV</DATA>
+          <TITLE>CursorY</TITLE>
+          <XLABEL>Pixel</XLABEL>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Cursor Y</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>951</x>
+    <y>213</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Plot</text>
+    <x>900</x>
+    <y>213</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Minimum</text>
+    <x>405</x>
+    <y>121</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MinValue_RBV</pv_name>
+    <x>479</x>
+    <y>122</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Maximum</text>
+    <x>575</x>
+    <y>121</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MaxValue_RBV</pv_name>
+    <x>649</x>
+    <y>122</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Min. X</text>
+    <x>415</x>
+    <y>146</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MinX_RBV</pv_name>
+    <x>479</x>
+    <y>147</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Max. X</text>
+    <x>585</x>
+    <y>146</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MaxX_RBV</pv_name>
+    <x>649</x>
+    <y>147</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Min. Y</text>
+    <x>415</x>
+    <y>171</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MinY_RBV</pv_name>
+    <x>479</x>
+    <y>172</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Max. Y</text>
+    <x>585</x>
+    <y>171</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MaxY_RBV</pv_name>
+    <x>649</x>
+    <y>172</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Total</text>
+    <x>423</x>
+    <y>196</y>
+    <width>50</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Total_RBV</pv_name>
+    <x>479</x>
+    <y>197</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Net</text>
+    <x>613</x>
+    <y>196</y>
+    <width>30</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Net_RBV</pv_name>
+    <x>649</x>
+    <y>197</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Mean</text>
+    <x>435</x>
+    <y>221</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)MeanValue_RBV</pv_name>
+    <x>479</x>
+    <y>222</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Sigma</text>
+    <x>595</x>
+    <y>221</y>
+    <width>50</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Sigma_RBV</pv_name>
+    <x>649</x>
+    <y>222</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSTotal</RN>
+        </macros>
+        <target>tab</target>
+        <description>Total</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSNet</RN>
+        </macros>
+        <target>tab</target>
+        <description>Net</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMinValue</RN>
+        </macros>
+        <target>tab</target>
+        <description>Min</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMinX</RN>
+        </macros>
+        <target>tab</target>
+        <description>Min X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMinY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Min Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMaxValue</RN>
+        </macros>
+        <target>tab</target>
+        <description>Max</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMaxX</RN>
+        </macros>
+        <target>tab</target>
+        <description>Max X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMaxY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Max Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSMeanValue</RN>
+        </macros>
+        <target>tab</target>
+        <description>Mean</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSigma</RN>
+        </macros>
+        <target>tab</target>
+        <description>Sigma</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSTimestamp</RN>
+        </macros>
+        <target>tab</target>
+        <description>Time stamp</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesBasicAll.opi</file>
+        <target>tab</target>
+        <description>All</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>590</x>
+    <y>246</y>
+    <width>60</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Time series plots</text>
+    <x>415</x>
+    <y>246</y>
+    <width>170</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ComputeCentroid</pv_name>
+    <x>584</x>
+    <y>311</y>
+    <width>60</width>
+    <height>18</height>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ComputeCentroid_RBV</pv_name>
+    <x>650</x>
+    <y>311</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Compute centroid</text>
+    <x>415</x>
+    <y>310</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Centroid</text>
+    <x>529</x>
+    <y>285</y>
+    <width>80</width>
+    <font>
+      <font family="Sans" style="BOLD" size="11.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Centroid threshold</text>
+    <x>395</x>
+    <y>335</y>
+    <width>180</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)CentroidThreshold</pv_name>
+    <x>584</x>
+    <y>336</y>
+    <width>60</width>
+    <height>19</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CentroidThreshold_RBV</pv_name>
+    <x>650</x>
+    <y>336</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Histogram</text>
+    <x>890</x>
+    <y>247</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="BOLD" size="11.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)ComputeHistogram</pv_name>
+    <x>951</x>
+    <y>275</y>
+    <width>60</width>
+    <height>18</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Compute histogram?</text>
+    <x>760</x>
+    <y>274</y>
+    <width>180</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)HistSize</pv_name>
+    <x>951</x>
+    <y>299</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Size</text>
+    <x>900</x>
+    <y>299</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)HistMin</pv_name>
+    <x>951</x>
+    <y>324</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Minimum</text>
+    <x>870</x>
+    <y>324</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)HistMax</pv_name>
+    <x>951</x>
+    <y>349</y>
+    <width>60</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="236" green="236" blue="236">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Maximum</text>
+    <x>870</x>
+    <y>349</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)ComputeHistogram_RBV</pv_name>
+    <x>1018</x>
+    <y>275</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistSize_RBV</pv_name>
+    <x>1018</x>
+    <y>300</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistMin_RBV</pv_name>
+    <x>1018</x>
+    <y>325</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistMax_RBV</pv_name>
+    <x>1018</x>
+    <y>350</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Centroid X</text>
+    <x>395</x>
+    <y>385</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CentroidX_RBV</pv_name>
+    <x>499</x>
+    <y>386</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CentroidY_RBV</pv_name>
+    <x>650</x>
+    <y>386</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Y</text>
+    <x>634</x>
+    <y>385</y>
+    <width>10</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Centroid total</text>
+    <x>395</x>
+    <y>361</y>
+    <width>140</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)CentroidTotal_RBV</pv_name>
+    <x>539</x>
+    <y>362</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)SigmaXY_RBV</pv_name>
+    <x>519</x>
+    <y>486</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Sigma XY</text>
+    <x>435</x>
+    <y>485</y>
+    <width>80</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)SigmaY_RBV</pv_name>
+    <x>650</x>
+    <y>411</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Y</text>
+    <x>634</x>
+    <y>410</y>
+    <width>10</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)SigmaX_RBV</pv_name>
+    <x>499</x>
+    <y>411</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Sigma X</text>
+    <x>425</x>
+    <y>410</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)SkewY_RBV</pv_name>
+    <x>650</x>
+    <y>436</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Y</text>
+    <x>634</x>
+    <y>435</y>
+    <width>10</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)SkewX_RBV</pv_name>
+    <x>499</x>
+    <y>436</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Skewness X</text>
+    <x>395</x>
+    <y>435</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)KurtosisY_RBV</pv_name>
+    <x>650</x>
+    <y>461</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Y</text>
+    <x>634</x>
+    <y>460</y>
+    <width>10</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)KurtosisX_RBV</pv_name>
+    <x>499</x>
+    <y>461</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Kurtosis X</text>
+    <x>395</x>
+    <y>460</y>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSCentroidTotal</RN>
+        </macros>
+        <target>tab</target>
+        <description>Total</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSCentroidY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Centroid X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSCentroidY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Centroid Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSigmaX</RN>
+        </macros>
+        <target>tab</target>
+        <description>Sigma X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSigmaY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Sigma Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSkewX</RN>
+        </macros>
+        <target>tab</target>
+        <description>Skewness X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSkewY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Skewness Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSKurtosisX</RN>
+        </macros>
+        <target>tab</target>
+        <description>Kurtosis X</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSKurtosisY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Kurtosis Y</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSSigmaXY</RN>
+        </macros>
+        <target>tab</target>
+        <description>Sigma XY</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSEccentricity</RN>
+        </macros>
+        <target>tab</target>
+        <description>Eccentricity</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesPlot.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+          <RN>$(R)TSOrientation</RN>
+        </macros>
+        <target>tab</target>
+        <description>Orientation</description>
+      </action>
+      <action type="open_display">
+        <file>NDStatsTimeSeriesCentroidAll.opi</file>
+        <target>tab</target>
+        <description>All</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>590</x>
+    <y>560</y>
+    <width>60</width>
+    <height>20</height>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Time series plots</text>
+    <x>415</x>
+    <y>560</y>
+    <width>170</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Eccentricity_RBV</pv_name>
+    <x>519</x>
+    <y>511</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Eccentricity</text>
+    <x>395</x>
+    <y>510</y>
+    <width>120</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)Orientation_RBV</pv_name>
+    <x>519</x>
+    <y>536</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Orientation</text>
+    <x>405</x>
+    <y>535</y>
+    <width>110</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistEntropy_RBV</pv_name>
+    <x>951</x>
+    <y>425</y>
+    <width>61</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Entropy</text>
+    <x>870</x>
+    <y>424</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistAbove_RBV</pv_name>
+    <x>951</x>
+    <y>400</y>
+    <width>61</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># above maximum</text>
+    <x>790</x>
+    <y>399</y>
+    <width>150</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)HistBelow_RBV</pv_name>
+    <x>951</x>
+    <y>375</y>
+    <width>61</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># below minimum</text>
+    <x>790</x>
+    <y>374</y>
+    <width>150</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDPlotXY.opi</file>
+        <macros>
+          <TITLE>Histogram</TITLE>
+          <XDATA>HistogramX_RBV</XDATA>
+          <XLABEL>Intensity</XLABEL>
+          <YDATA>Histogram_RBV</YDATA>
+          <YLABEL>Counts</YLABEL>
+        </macros>
+        <target>tab</target>
+        <description>Histogram plot</description>
+      </action>
+    </actions>
+    <text></text>
+    <x>951</x>
+    <y>449</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Plot</text>
+    <x>900</x>
+    <y>449</y>
+    <width>40</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Time Series</text>
+    <x>836</x>
+    <y>486</y>
+    <width>154</width>
+    <font>
+      <font family="Sans" style="BOLD" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Current point</text>
+    <x>816</x>
+    <y>562</y>
+    <width>130</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)TS:TSCurrentPoint</pv_name>
+    <x>951</x>
+    <y>563</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)TS:TSRead.SCAN</pv_name>
+    <x>931</x>
+    <y>587</y>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)TS:TSRead.PROC</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)TS:TSRead.PROC</pv_name>
+    <text>Read</text>
+    <x>1036</x>
+    <y>587</y>
+    <width>70</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Read rate</text>
+    <x>836</x>
+    <y>587</y>
+    <width>90</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>$(P)$(R)TS:TSNumPoints</pv_name>
+    <x>951</x>
+    <y>538</y>
+    <width>60</width>
+    <height>25</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Number of points</text>
+    <x>786</x>
+    <y>537</y>
+    <width>160</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)TS:TSAcquire</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)TS:TSAcquire</pv_name>
+    <text>Erase/Start</text>
+    <x>856</x>
+    <y>512</y>
+    <width>90</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(P)$(R)TS:TSAcquire</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(P)$(R)TS:TSAcquire</pv_name>
+    <text>Stop</text>
+    <x>951</x>
+    <y>512</y>
+    <width>60</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)TS:TSAcquiring</pv_name>
+    <x>1016</x>
+    <y>513</y>
+    <width>90</width>
+    <height>18</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Acquire</text>
+    <x>781</x>
+    <y>512</y>
+    <width>70</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>NDPluginTimeSeries.opi</file>
+        <macros>
+          <R>$(R)TS:</R>
+        </macros>
+        <target>tab</target>
+        <description>Time series control</description>
+      </action>
+    </actions>
+    <text>More</text>
+    <x>1036</x>
+    <y>612</y>
+    <width>70</width>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>AcquireMode</text>
+    <x>816</x>
+    <y>611</y>
+    <width>110</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)TS:TSAcquireMode</pv_name>
+    <x>931</x>
+    <y>611</y>
+    <height>20</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Titlebar_2</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1270</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Title_1</name>
+    <class>TITLE</class>
+    <text>$(P)$(R)</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>280</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+</display>

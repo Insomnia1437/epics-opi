@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(P) channels</name>
+  <x>251</x>
+  <y>367</y>
+  <width>400</width>
+  <height>890</height>
+  <background_color>
+    <color red="200" green="205" blue="201">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>60</x>
+    <y>2</y>
+    <width>270</width>
+    <height>21</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Channels</text>
+    <x>110</x>
+    <y>2</y>
+    <width>170</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ioc_read_fg" red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Trigger mode</text>
+    <x>16</x>
+    <y>28</y>
+    <width>105</width>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(P)$(R)TrigMode</pv_name>
+    <x>121</x>
+    <y>28</y>
+    <width>136</width>
+    <height>20</height>
+    <background_color>
+      <color red="115" green="223" blue="255">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(P)$(R)TrigModeR</pv_name>
+    <x>262</x>
+    <y>29</y>
+    <width>80</width>
+    <height>18</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Ch A</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>A</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch B</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>B</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch C</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>C</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch D</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>D</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch E</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>E</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch F</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>F</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch G</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>G</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Ch H</name>
+        <file>channel.bob</file>
+        <macros>
+          <N>H</N>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <x>13</x>
+    <y>60</y>
+    <width>375</width>
+    <height>825</height>
+    <direction>0</direction>
+    <tab_width>45</tab_width>
+    <selected_color>
+      <color red="200" green="205" blue="201">
+      </color>
+    </selected_color>
+    <deselected_color>
+      <color red="179" green="179" blue="179">
+      </color>
+    </deselected_color>
+  </widget>
+</display>

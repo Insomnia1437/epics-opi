@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>$(P) main</name>
+  <x>125</x>
+  <y>48</y>
+  <width>850</width>
+  <height>800</height>
+  <background_color>
+    <color red="200" green="205" blue="201">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>100</x>
+    <y>4</y>
+    <width>600</width>
+    <height>25</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>100</x>
+    <y>4</y>
+    <width>600</width>
+    <height>26</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="187" green="187" blue="187">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Area Detector Control - $(P)$(R)</text>
+      <x>58</x>
+      <y>1</y>
+      <width>482</width>
+      <height>25</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.851485148514852">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ioc_read_fg" red="10" green="0" blue="184">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>adcore/ADSetup.bob</file>
+    <x>6</x>
+    <y>35</y>
+    <height>280</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>adcore/ADAttrFile.opi</file>
+    <x>6</x>
+    <y>520</y>
+    <height>70</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>adcollect.bob</file>
+    <x>420</x>
+    <y>35</y>
+    <width>420</width>
+    <height>670</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>adcore/ADBuffers.opi</file>
+    <x>6</x>
+    <y>335</y>
+    <height>165</height>
+    <resize>2</resize>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>
