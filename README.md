@@ -16,6 +16,9 @@ Based on the OPI files from this commit [epics-modules/mrfioc2](https://github.c
 ## picoscope
 Based on [https://gitlab.esss.lu.se/icshwi/picoscope-opi](https://gitlab.esss.lu.se/icshwi/picoscope-opi)
 
+## asyn
+Based on asyn `R4-44-2`
+
 ## How to
 
 - How to use `color.def`
