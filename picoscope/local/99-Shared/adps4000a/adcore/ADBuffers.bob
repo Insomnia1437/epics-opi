@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-05-20 10:36:41 by wang1-->
 <display version="2.0.0">
   <name>ADBuffers</name>
   <x>603</x>
@@ -11,7 +12,7 @@
   </background_color>
   <actions>
   </actions>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>Buffers</name>
     <width>400</width>
     <height>165</height>
@@ -54,7 +55,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_28</name>
-      <text>Buffers max/used</text>
+      <text>Buffers used</text>
       <x>16</x>
       <y>40</y>
       <width>165</width>
@@ -89,16 +90,9 @@
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>Text Update_52</name>
-      <pv_name>$(P)$(R)PoolMaxBuffers</pv_name>
-      <x>203</x>
-      <y>40</y>
-      <width>80</width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
       <name>Text Update_55</name>
       <pv_name>$(P)$(R)PoolUsedBuffers</pv_name>
-      <x>300</x>
+      <x>203</x>
       <y>40</y>
       <width>80</width>
     </widget>
