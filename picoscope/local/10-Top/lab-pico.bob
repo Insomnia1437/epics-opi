@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-05-16 08:48:30 by gabrielfedel-->
+<!--Saved on 2024-05-24 16:33:31 by wang1-->
 <display version="2.0.0">
   <name>Display</name>
   <width>920</width>
@@ -7,12 +7,10 @@
   <widget type="rectangle" version="2.0.0">
     <name>Titlebar</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>920</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -21,22 +19,21 @@
     <name>Title</name>
     <class>TITLE</class>
     <text>PicoScope - adps4000a </text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>900</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button</name>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-02-28 11:32:19 by agaget-->
+<!--Saved on 2024-05-27 14:42:30 by wang1-->
 <display version="2.0.0">
   <name>Launcher timing Labo</name>
   <width>200</width>
@@ -10,7 +10,7 @@
       <action type="open_display">
         <file>evg/evm-mtca-300.bob</file>
         <macros>
-          <P>Labo:titan-EVM</P>
+          <P>TDL:Ctrl-EVG-001</P>
           <TITLE>EVM Demo</TITLE>
         </macros>
         <target>tab</target>
@@ -29,7 +29,7 @@
       <action type="open_display">
         <file>evr/evr-mtca-300u.bob</file>
         <macros>
-          <P>Labo:titan-EVR</P>
+          <P>TDL:Ctrl-EVR-001</P>
           <TITLE>EVR Demo</TITLE>
         </macros>
         <target>tab</target>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-05-27 15:26:48 by wang1-->
 <display version="2.0.0">
   <name>Display</name>
   <width>1270</width>
   <widget type="rectangle" version="2.0.0">
     <name>Titlebar</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1270</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -19,24 +18,23 @@
     <name>Title</name>
     <class>TITLE</class>
     <text>Channel $(N)     $(P)$(R1)</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>560</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>MGGrey02</name>
     <x>20</x>
     <y>70</y>
@@ -119,7 +117,7 @@
         </font>
       </font>
       <foreground_color>
-        <color name="OK" red="61" green="216" blue="61">
+        <color name="OK" red="0" green="255" blue="0">
         </color>
       </foreground_color>
       <background_color>
@@ -179,7 +177,7 @@
         </font>
       </font>
       <foreground_color>
-        <color name="OK" red="61" green="216" blue="61">
+        <color name="OK" red="0" green="255" blue="0">
         </color>
       </foreground_color>
       <background_color>
@@ -445,7 +443,7 @@
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
+  <widget type="group" version="3.0.0">
     <name>BGGrey01</name>
     <x>410</x>
     <y>70</y>
@@ -472,18 +470,14 @@
       <corner_width>10</corner_width>
       <corner_height>10</corner_height>
     </widget>
-    <widget type="xyplot" version="2.0.0">
+    <widget type="xyplot" version="3.0.0">
       <name>XY Graph</name>
       <x>10</x>
       <y>10</y>
       <width>830</width>
       <height>390</height>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
       <title_font>
-        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </title_font>
       <show_toolbar>true</show_toolbar>
@@ -517,11 +511,11 @@
         <maximum>100.0</maximum>
         <show_grid>true</show_grid>
         <title_font>
-          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
           </font>
         </title_font>
         <scale_font>
-          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
           </font>
         </scale_font>
         <visible>true</visible>
@@ -535,14 +529,19 @@
           <maximum>100.0</maximum>
           <show_grid>true</show_grid>
           <title_font>
-            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
             </font>
           </title_font>
           <scale_font>
-            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
             </font>
           </scale_font>
+          <on_right>false</on_right>
           <visible>true</visible>
+          <color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </color>
         </y_axis>
       </y_axes>
       <traces>
@@ -683,27 +682,5 @@
         </color>
       </border_color>
     </widget>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_2</name>
-    <macros>
-      <R>$(R1)$(N)-Stats1:</R>
-    </macros>
-    <file>../adcore/NDStats.bob</file>
-    <x>20</x>
-    <y>310</y>
-    <width>370</width>
-    <height>240</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_3</name>
-    <macros>
-      <R>$(R1)$(N)-ROI1:</R>
-    </macros>
-    <file>../adcore/NDROI.bob</file>
-    <x>30</x>
-    <y>560</y>
-    <width>360</width>
-    <height>360</height>
   </widget>
 </display>
