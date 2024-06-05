@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ioc_stats_epics_env</name>
+  <x>1126</x>
+  <y>181</y>
+  <width>540</width>
+  <height>330</height>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey02</name>
+    <width>540</width>
+    <height>330</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-titlebar</name>
+      <width>540</width>
+      <height>59</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>BGGrey02-title</name>
+      <text>| Click to edit Title |</text>
+      <width>540</width>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-background</name>
+      <y>30</y>
+      <width>540</width>
+      <height>300</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>BGGrey02-content-group</name>
+      <x>10</x>
+      <y>40</y>
+      <width>520</width>
+      <height>280</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS Environment Variables $(IOCNAME):</text>
+        <x>5</x>
+        <width>450</width>
+        <height>30</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="23.762376237623762">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_SERVER_PORT</text>
+        <y>40</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_REPEATER_PORT</text>
+        <y>60</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_ADDR_LIST</text>
+        <y>80</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_AUTO_ADDR_LIST</text>
+        <y>100</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_MAX_ARRAY_BYTES</text>
+        <y>120</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_CONN_TMO (sec)</text>
+        <y>140</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_MAX_SEARCH_PERIOD (sec)</text>
+        <y>160</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_CA_BEACON_PERIOD (sec)</text>
+        <y>180</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_TIMEZONE</text>
+        <y>200</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_TS_NTP_INET</text>
+        <y>220</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_IOC_LOG_PORT</text>
+        <y>240</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>EPICS_IOC_LOG_INET</text>
+        <y>260</y>
+        <width>185</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_SRVR_PORT</pv_name>
+        <x>195</x>
+        <y>40</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_RPTR_PORT</pv_name>
+        <x>195</x>
+        <y>60</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_ADDR_LIST</pv_name>
+        <x>195</x>
+        <y>80</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_AUTO_ADDR</pv_name>
+        <x>195</x>
+        <y>100</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_MAX_ARRAY</pv_name>
+        <x>195</x>
+        <y>120</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_CONN_TIME</pv_name>
+        <x>195</x>
+        <y>140</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_SRCH_TIME</pv_name>
+        <x>195</x>
+        <y>160</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_BEAC_TIME</pv_name>
+        <x>195</x>
+        <y>180</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#TIMEZONE</pv_name>
+        <x>195</x>
+        <y>200</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#TS_NTP_INET</pv_name>
+        <x>195</x>
+        <y>220</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#IOC_LOG_PORT</pv_name>
+        <x>195</x>
+        <y>240</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#IOC_LOG_INET</pv_name>
+        <x>195</x>
+        <y>260</y>
+        <width>320</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

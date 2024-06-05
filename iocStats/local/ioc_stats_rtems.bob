@@ -1,0 +1,2790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ioc_stats_rtems</name>
+  <x>903</x>
+  <y>166</y>
+  <width>540</width>
+  <height>756</height>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <y>58</y>
+    <width>540</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <y>230</y>
+    <width>540</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <y>496</y>
+    <width>540</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>314</x>
+    <y>497</y>
+    <width>1</width>
+    <height>260</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>1</x>
+    <y>343</y>
+    <width>540</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>2</x>
+    <y>312</y>
+    <width>540</width>
+    <height>2</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>315</x>
+    <y>525</y>
+    <width>225</width>
+    <height>1</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>315</x>
+    <y>596</y>
+    <width>225</width>
+    <height>1</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <y>634</y>
+    <width>315</width>
+    <height>1</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="0" green="0" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>IOC Diagnostics</text>
+    <x>6</x>
+    <y>4</y>
+    <width>211</width>
+    <height>25</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(IOCNAME):</text>
+    <x>5</x>
+    <y>29</y>
+    <width>212</width>
+    <height>27</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Startup Time</text>
+    <x>10</x>
+    <y>66</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Current Time</text>
+    <x>10</x>
+    <y>86</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Up Time</text>
+    <x>10</x>
+    <y>106</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Heartbeat</text>
+    <x>10</x>
+    <y>126</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># Records</text>
+    <x>10</x>
+    <y>146</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Host Name</text>
+    <x>10</x>
+    <y>166</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>User Name</text>
+    <x>10</x>
+    <y>186</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Location</text>
+    <x>10</x>
+    <y>206</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>330</x>
+    <y>60</y>
+    <width>1</width>
+    <height>171</height>
+    <line_width>1</line_width>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="170.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># CA Clients</text>
+    <x>340</x>
+    <y>70</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># CA PV Conns</text>
+    <x>340</x>
+    <y>100</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># Susp Tasks</text>
+    <x>340</x>
+    <y>130</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):STARTTOD</pv_name>
+    <x>125</x>
+    <y>66</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):TOD</pv_name>
+    <x>125</x>
+    <y>86</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):UPTIME</pv_name>
+    <x>125</x>
+    <y>106</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):HEARTBEAT</pv_name>
+    <x>125</x>
+    <y>126</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):RECORD_CNT</pv_name>
+    <x>125</x>
+    <y>146</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):HOSTNAME</pv_name>
+    <x>125</x>
+    <y>166</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):ENGINEER</pv_name>
+    <x>125</x>
+    <y>186</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):LOCATION</pv_name>
+    <x>125</x>
+    <y>206</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CA_CLNT_CNT</pv_name>
+    <x>470</x>
+    <y>70</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CA_CONN_CNT</pv_name>
+    <x>470</x>
+    <y>100</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):SUSP_TASK_CNT</pv_name>
+    <x>470</x>
+    <y>130</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>EPICS Version</text>
+    <x>5</x>
+    <y>357</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Application Directory</text>
+    <x>5</x>
+    <y>398</y>
+    <width>150</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Startup Script</text>
+    <x>5</x>
+    <y>431</y>
+    <width>150</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):EPICS_VERS</pv_name>
+    <x>112</x>
+    <y>357</y>
+    <width>350</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):APP_DIR1</pv_name>
+    <x>5</x>
+    <y>413</y>
+    <width>265</width>
+    <height>13</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):ST_SCRIPT1</pv_name>
+    <x>5</x>
+    <y>446</y>
+    <width>265</width>
+    <height>12</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):APP_DIR2</pv_name>
+    <x>270</x>
+    <y>413</y>
+    <width>265</width>
+    <height>13</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):ST_SCRIPT2</pv_name>
+    <x>270</x>
+    <y>446</y>
+    <width>265</width>
+    <height>12</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Memory (# bytes)</text>
+    <x>136</x>
+    <y>508</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free</text>
+    <x>9</x>
+    <y>541</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Used</text>
+    <x>9</x>
+    <y>559</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Machine</text>
+    <x>9</x>
+    <y>576</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Maximum</text>
+    <x>9</x>
+    <y>589</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>CPU Load</text>
+    <x>369</x>
+    <y>504</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># File Desciptors</text>
+    <x>374</x>
+    <y>532</y>
+    <width>105</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free</text>
+    <x>374</x>
+    <y>557</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Max</text>
+    <x>374</x>
+    <y>577</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):IOC_CPU_LOAD</pv_name>
+    <x>427</x>
+    <y>505</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):FD_FREE</pv_name>
+    <x>414</x>
+    <y>557</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):FD_MAX</pv_name>
+    <x>414</x>
+    <y>577</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):MEM_FREE</pv_name>
+    <x>89</x>
+    <y>540</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):MEM_USED</pv_name>
+    <x>89</x>
+    <y>560</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):MEM_MAX</pv_name>
+    <x>89</x>
+    <y>580</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_limits.opi</file>
+        <target>window</target>
+        <description>Alarm Limits</description>
+      </action>
+    </actions>
+    <text>Alarm Limits</text>
+    <x>338</x>
+    <y>162</y>
+    <width>110</width>
+    <height>20</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_epics_env.opi</file>
+        <target>window</target>
+        <description>EPICS Env Vars</description>
+      </action>
+    </actions>
+    <text>EPICS Env Vars</text>
+    <x>339</x>
+    <y>191</y>
+    <width>110</width>
+    <height>21</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>OS Version</text>
+    <x>5</x>
+    <y>377</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):KERNEL_VERS</pv_name>
+    <x>112</x>
+    <y>377</y>
+    <width>350</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Menu Button</name>
+    <pv_name>$(IOCNAME):ACCESS</pv_name>
+    <x>36</x>
+    <y>320</y>
+    <width>96</width>
+    <height>21</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Mode</text>
+    <x>7</x>
+    <y>323</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_reloadacf_confirm.opi</file>
+        <target>window</target>
+        <description>Reload ACF</description>
+      </action>
+    </actions>
+    <text>Reload Access Security Conf File</text>
+    <x>150</x>
+    <y>320</y>
+    <width>226</width>
+    <height>21</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_reboot_confirm.opi</file>
+        <target>window</target>
+        <description>Reboot</description>
+      </action>
+    </actions>
+    <text>Reboot</text>
+    <x>394</x>
+    <y>320</y>
+    <width>110</width>
+    <height>21</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>General Time Providers</text>
+    <x>139</x>
+    <y>236</y>
+    <width>150</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Current</text>
+    <x>9</x>
+    <y>254</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Event</text>
+    <x>9</x>
+    <y>274</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Highest Priority</text>
+    <x>9</x>
+    <y>294</y>
+    <width>110</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):GTIM_CUR_SRC</pv_name>
+    <x>124</x>
+    <y>254</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):GTIM_EVT_SRC</pv_name>
+    <x>124</x>
+    <y>274</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):GTIM_HI_SRC</pv_name>
+    <x>124</x>
+    <y>294</y>
+    <width>190</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># Secs</text>
+    <x>342</x>
+    <y>250</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>since 1990</text>
+    <x>341</x>
+    <y>262</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):GTIM_TIME</pv_name>
+    <x>409</x>
+    <y>254</y>
+    <width>120</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># Errors</text>
+    <x>340</x>
+    <y>282</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):GTIM_ERR_CNT</pv_name>
+    <x>409</x>
+    <y>279</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(IOCNAME):GTIM_RESET.PROC</pv_name>
+        <value>0</value>
+      </action>
+    </actions>
+    <pv_name>$(IOCNAME):GTIM_RESET.PROC</pv_name>
+    <text>Reset</text>
+    <x>478</x>
+    <y>277</y>
+    <width>53</width>
+    <height>17</height>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>RTEMS Boot Line</text>
+    <x>4</x>
+    <y>466</y>
+    <width>150</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):BOOTLINE1</pv_name>
+    <x>4</x>
+    <y>481</y>
+    <width>265</width>
+    <height>12</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):BOOTLINE2</pv_name>
+    <x>269</x>
+    <y>481</y>
+    <width>265</width>
+    <height>12</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Heap</text>
+    <x>113</x>
+    <y>523</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Workspace</text>
+    <x>225</x>
+    <y>522</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):RAM_WS_FREE</pv_name>
+    <x>202</x>
+    <y>540</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):RAM_WS_USED</pv_name>
+    <x>202</x>
+    <y>560</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):RAM_WS_MAX</pv_name>
+    <x>202</x>
+    <y>580</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>RAM Block</text>
+    <x>8</x>
+    <y>617</y>
+    <width>80</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Largest Free</text>
+    <x>8</x>
+    <y>604</y>
+    <width>80</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):MEM_BLK_FREE</pv_name>
+    <x>89</x>
+    <y>609</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text># IF Errors</text>
+    <x>374</x>
+    <y>602</y>
+    <width>105</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Input</text>
+    <x>374</x>
+    <y>627</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Output</text>
+    <x>374</x>
+    <y>647</y>
+    <width>30</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):IFI_ERR_CNT</pv_name>
+    <x>414</x>
+    <y>627</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):IFO_ERR_CNT</pv_name>
+    <x>414</x>
+    <y>647</y>
+    <width>60</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>% Free</text>
+    <x>7</x>
+    <y>655</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Max</text>
+    <x>7</x>
+    <y>675</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):SYS_MBUF_FREE</pv_name>
+    <x>89</x>
+    <y>655</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):SYS_MBUF_MAX</pv_name>
+    <x>89</x>
+    <y>675</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>System MBUFs</text>
+    <x>98</x>
+    <y>637</y>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_0_0</pv_name>
+    <x>11</x>
+    <y>716</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_1_0</pv_name>
+    <x>11</x>
+    <y>736</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Size</text>
+    <x>21</x>
+    <y>699</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Clusters</text>
+    <x>72</x>
+    <y>698</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_0_1</pv_name>
+    <x>69</x>
+    <y>716</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_1_1</pv_name>
+    <x>69</x>
+    <y>736</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free</text>
+    <x>138</x>
+    <y>698</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_0_2</pv_name>
+    <x>127</x>
+    <y>716</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_1_2</pv_name>
+    <x>127</x>
+    <y>736</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Free (%)</text>
+    <x>188</x>
+    <y>698</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):SYS_CLUST_AVAIL_0</pv_name>
+    <x>185</x>
+    <y>716</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):SYS_CLUST_AVAIL_1</pv_name>
+    <x>185</x>
+    <y>736</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_0_3</pv_name>
+    <x>243</x>
+    <y>716</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(IOCNAME):CLUST_1_1_3</pv_name>
+    <x>243</x>
+    <y>736</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Usage</text>
+    <x>254</x>
+    <y>698</y>
+    <width>50</width>
+    <height>15</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="8.910891089108912">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey02</name>
+    <y>900</y>
+    <width>280</width>
+    <height>210</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-titlebar</name>
+      <width>280</width>
+      <height>59</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>BGGrey02-title</name>
+      <text>| Click to edit Title |</text>
+      <width>280</width>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-background</name>
+      <y>30</y>
+      <width>280</width>
+      <height>180</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_height>10</corner_height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey02-content-group</name>
+    <x>650</x>
+    <width>810</width>
+    <height>959</height>
+    <style>3</style>
+    <transparent>true</transparent>
+  </widget>
+</display>

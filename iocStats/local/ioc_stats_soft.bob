@@ -1,0 +1,1678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-05 14:46:44 by wang1-->
+<display version="2.0.0">
+  <name>ioc_stats_soft</name>
+  <x>903</x>
+  <y>166</y>
+  <width>640</width>
+  <height>1080</height>
+  <actions>
+  </actions>
+  <widget type="group" version="3.0.0">
+    <name>BGGrey02</name>
+    <width>640</width>
+    <height>1067</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-titlebar</name>
+      <width>640</width>
+      <height>59</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>BGGrey02-title</name>
+      <text>| Click to edit Title |</text>
+      <width>640</width>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey02-background</name>
+    <y>30</y>
+    <width>640</width>
+    <height>1050</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>BGGrey02-content-group_3</name>
+    <x>10</x>
+    <y>40</y>
+    <width>620</width>
+    <height>1031</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group_1</name>
+      <x>320</x>
+      <height>131</height>
+      <style>2</style>
+      <widget type="label" version="2.0.0">
+        <name>Label_31</name>
+        <text># CA Clients</text>
+        <x>11</x>
+        <y>10</y>
+        <width>120</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_32</name>
+        <text># CA PV Conns</text>
+        <x>11</x>
+        <y>40</y>
+        <width>120</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_33</name>
+        <text># Susp Tasks</text>
+        <x>11</x>
+        <y>70</y>
+        <width>120</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_5</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_limits.opi</file>
+            <target>window</target>
+            <description>Alarm Limits</description>
+          </action>
+        </actions>
+        <text>Alarm Limits</text>
+        <x>11</x>
+        <y>100</y>
+        <width>110</width>
+        <height>20</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_6</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_epics_env.opi</file>
+            <target>window</target>
+            <description>EPICS Env Vars</description>
+          </action>
+        </actions>
+        <text>EPICS Env Vars</text>
+        <x>139</x>
+        <y>100</y>
+        <width>149</width>
+        <height>21</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_31</name>
+        <pv_name>$(IOCNAME):#CA_CLNT_CNT</pv_name>
+        <x>139</x>
+        <y>10</y>
+        <width>150</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_32</name>
+        <pv_name>$(IOCNAME):#CA_CONN_CNT</pv_name>
+        <x>139</x>
+        <y>40</y>
+        <width>150</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_33</name>
+        <pv_name>$(IOCNAME):#SUSP_TASK_CNT</pv_name>
+        <x>139</x>
+        <y>70</y>
+        <width>150</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_3</name>
+      <y>260</y>
+      <width>620</width>
+      <height>140</height>
+      <style>2</style>
+      <widget type="label" version="2.0.0">
+        <name>Label_34</name>
+        <text>Current</text>
+        <x>10</x>
+        <y>40</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_35</name>
+        <text>Event</text>
+        <x>10</x>
+        <y>70</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_36</name>
+        <text>Highest Priority</text>
+        <x>10</x>
+        <y>100</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_37</name>
+        <text>General Time Providers</text>
+        <x>110</x>
+        <y>10</y>
+        <width>190</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_34</name>
+        <pv_name>$(IOCNAME):#GTIM_CUR_SRC</pv_name>
+        <x>110</x>
+        <y>40</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_35</name>
+        <pv_name>$(IOCNAME):#GTIM_EVT_SRC</pv_name>
+        <x>110</x>
+        <y>70</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_36</name>
+        <pv_name>$(IOCNAME):#GTIM_HI_SRC</pv_name>
+        <x>110</x>
+        <y>100</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_38</name>
+        <text># Secs since 1990</text>
+        <x>321</x>
+        <y>40</y>
+        <width>208</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_37</name>
+        <pv_name>$(IOCNAME):#GTIM_TIME</pv_name>
+        <x>389</x>
+        <y>60</y>
+        <width>220</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_39</name>
+        <text># Errors</text>
+        <x>321</x>
+        <y>100</y>
+        <width>87</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_38</name>
+        <pv_name>$(IOCNAME):#GTIM_ERR_CNT</pv_name>
+        <x>389</x>
+        <y>100</y>
+        <width>110</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_1</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(IOCNAME):#GTIM_RESET.PROC</pv_name>
+            <value>0</value>
+            <description>WritePV</description>
+          </action>
+        </actions>
+        <pv_name>$(IOCNAME):#GTIM_RESET.PROC</pv_name>
+        <text>Reset</text>
+        <x>517</x>
+        <y>100</y>
+        <width>92</width>
+        <height>20</height>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_5</name>
+      <y>410</y>
+      <width>620</width>
+      <height>339</height>
+      <style>2</style>
+      <widget type="label" version="2.0.0">
+        <name>Label_41</name>
+        <text>EPICS Version</text>
+        <x>10</x>
+        <y>10</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_42</name>
+        <text>OS Version</text>
+        <x>10</x>
+        <y>40</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_43</name>
+        <text>BSP Revision</text>
+        <x>10</x>
+        <y>70</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_39</name>
+        <pv_name>$(IOCNAME):EPICS_VERS</pv_name>
+        <x>162</x>
+        <y>10</y>
+        <width>446</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_40</name>
+        <pv_name>$(IOCNAME):#KERNEL_VERS</pv_name>
+        <x>162</x>
+        <y>40</y>
+        <width>446</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_41</name>
+        <pv_name>$(IOCNAME):BSP_REV</pv_name>
+        <x>162</x>
+        <y>70</y>
+        <width>446</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_44</name>
+        <text>Application Directory</text>
+        <x>10</x>
+        <y>110</y>
+        <width>150</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_42</name>
+        <pv_name>$(IOCNAME):#APP_DIR1</pv_name>
+        <x>10</x>
+        <y>135</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_43</name>
+        <pv_name>$(IOCNAME):ST_SCRIPT1</pv_name>
+        <x>10</x>
+        <y>195</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_44</name>
+        <pv_name>$(IOCNAME):#APP_DIR2</pv_name>
+        <x>300</x>
+        <y>135</y>
+        <width>308</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_45</name>
+        <pv_name>$(IOCNAME):ST_SCRIPT2</pv_name>
+        <x>300</x>
+        <y>195</y>
+        <width>308</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_45</name>
+        <text>Startup Script</text>
+        <x>10</x>
+        <y>170</y>
+        <width>150</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_46</name>
+        <text>Boot Line</text>
+        <x>10</x>
+        <y>226</y>
+        <width>150</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_46</name>
+        <pv_name>$(IOCNAME):BOOTLINE1</pv_name>
+        <x>10</x>
+        <y>250</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_47</name>
+        <pv_name>$(IOCNAME):BOOTLINE3</pv_name>
+        <x>10</x>
+        <y>280</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_48</name>
+        <pv_name>$(IOCNAME):BOOTLINE5</pv_name>
+        <x>10</x>
+        <y>310</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_49</name>
+        <pv_name>$(IOCNAME):BOOTLINE2</pv_name>
+        <x>320</x>
+        <y>250</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_50</name>
+        <pv_name>$(IOCNAME):BOOTLINE4</pv_name>
+        <x>320</x>
+        <y>280</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_51</name>
+        <pv_name>$(IOCNAME):BOOTLINE6</pv_name>
+        <x>320</x>
+        <y>310</y>
+        <width>290</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_8</name>
+      <width>310</width>
+      <height>250</height>
+      <style>2</style>
+      <widget type="label" version="2.0.0">
+        <name>Label_60</name>
+        <text>Startup Time</text>
+        <x>9</x>
+        <y>10</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_61</name>
+        <text>Current Time</text>
+        <x>9</x>
+        <y>45</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_62</name>
+        <text>Up Time</text>
+        <x>9</x>
+        <y>80</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_63</name>
+        <text>Heartbeat</text>
+        <x>9</x>
+        <y>115</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_64</name>
+        <text># Records</text>
+        <x>9</x>
+        <y>150</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_65</name>
+        <text>Host Name</text>
+        <x>9</x>
+        <y>185</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_67</name>
+        <text>Location</text>
+        <x>9</x>
+        <y>220</y>
+        <width>110</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_61</name>
+        <pv_name>$(IOCNAME):#STARTTOD</pv_name>
+        <x>109</x>
+        <y>10</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_62</name>
+        <pv_name>$(IOCNAME):#TOD</pv_name>
+        <x>109</x>
+        <y>45</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_63</name>
+        <pv_name>$(IOCNAME):UPTIME</pv_name>
+        <x>109</x>
+        <y>80</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_64</name>
+        <pv_name>$(IOCNAME):HEARTBEAT</pv_name>
+        <x>109</x>
+        <y>115</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_65</name>
+        <pv_name>$(IOCNAME):#RECORD_CNT</pv_name>
+        <x>109</x>
+        <y>150</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_66</name>
+        <pv_name>$(IOCNAME):HOSTNAME</pv_name>
+        <x>109</x>
+        <y>185</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_68</name>
+        <pv_name>$(IOCNAME):LOCATION</pv_name>
+        <x>109</x>
+        <y>220</y>
+        <width>190</width>
+        <format>1</format>
+        <show_units>false</show_units>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_4</name>
+      <x>320</x>
+      <y>140</y>
+      <height>110</height>
+      <style>2</style>
+      <widget type="label" version="2.0.0">
+        <name>Label_40</name>
+        <text>Mode</text>
+        <x>10</x>
+        <y>10</y>
+        <width>30</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="combo" version="2.0.0">
+        <name>Menu Button_7</name>
+        <pv_name>$(IOCNAME):ACCESS</pv_name>
+        <x>48</x>
+        <y>10</y>
+        <width>96</width>
+        <height>20</height>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_8</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_reloadacf_confirm.opi</file>
+            <target>window</target>
+            <description>Reload ACF</description>
+          </action>
+        </actions>
+        <text>Reload Access Security Conf File</text>
+        <x>48</x>
+        <y>45</y>
+        <width>229</width>
+        <height>20</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_9</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_reboot_confirm.opi</file>
+            <target>window</target>
+            <description>Reboot</description>
+          </action>
+        </actions>
+        <text>Reboot</text>
+        <x>48</x>
+        <y>80</y>
+        <width>168</width>
+        <height>20</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Memory (bytes)</name>
+      <y>760</y>
+      <width>310</width>
+      <height>120</height>
+      <widget type="label" version="2.0.0">
+        <name>Label_74</name>
+        <text>Free</text>
+        <y>10</y>
+        <width>40</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_75</name>
+        <text>Used</text>
+        <y>35</y>
+        <width>40</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_76</name>
+        <text>Max</text>
+        <y>60</y>
+        <width>40</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_77</name>
+        <pv_name>$(IOCNAME):#MEM_FREE</pv_name>
+        <x>45</x>
+        <y>10</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_78</name>
+        <pv_name>$(IOCNAME):#MEM_USED</pv_name>
+        <x>45</x>
+        <y>35</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_79</name>
+        <pv_name>$(IOCNAME):#MEM_MAX</pv_name>
+        <x>45</x>
+        <y>60</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_77</name>
+        <text>Largest Free</text>
+        <x>162</x>
+        <y>10</y>
+        <width>101</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_78</name>
+        <text>RAM Block</text>
+        <x>162</x>
+        <y>35</y>
+        <width>101</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_80</name>
+        <pv_name>$(IOCNAME):MEM_BLK_FREE</pv_name>
+        <x>162</x>
+        <y>60</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>MBUFs</name>
+      <y>880</y>
+      <width>310</width>
+      <height>150</height>
+      <widget type="label" version="2.0.0">
+        <name>Label_79</name>
+        <text>System</text>
+        <x>79</x>
+        <width>53</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_80</name>
+        <text>Data</text>
+        <x>179</x>
+        <width>50</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_81</name>
+        <text>% Free</text>
+        <y>30</y>
+        <width>50</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_82</name>
+        <text>Max</text>
+        <y>55</y>
+        <width>50</width>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_81</name>
+        <pv_name>$(IOCNAME):#SYS_MBUF_FREE</pv_name>
+        <x>60</x>
+        <y>30</y>
+        <width>93</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_82</name>
+        <pv_name>$(IOCNAME):SYS_MBUF_MAX</pv_name>
+        <x>60</x>
+        <y>55</y>
+        <width>93</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_12</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_clust.opi</file>
+            <macros>
+              <idx>1</idx>
+              <name>System</name>
+              <pool>SYS</pool>
+            </macros>
+            <target>window</target>
+            <description>System Cluster Info</description>
+          </action>
+        </actions>
+        <text>Cluster Info</text>
+        <x>60</x>
+        <y>85</y>
+        <width>94</width>
+        <height>21</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_83</name>
+        <pv_name>$(IOCNAME):DAT_MBUF_FREE</pv_name>
+        <x>172</x>
+        <y>30</y>
+        <width>93</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_84</name>
+        <pv_name>$(IOCNAME):DAT_MBUF_MAX</pv_name>
+        <x>172</x>
+        <y>55</y>
+        <width>93</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Menu Button_13</name>
+        <actions>
+          <action type="open_display">
+            <file>ioc_stats_clust.opi</file>
+            <macros>
+              <idx>0</idx>
+              <name>Data</name>
+              <pool>DAT</pool>
+            </macros>
+            <target>window</target>
+            <description>Data Cluster Info</description>
+          </action>
+        </actions>
+        <text>Cluster Info</text>
+        <x>172</x>
+        <y>85</y>
+        <width>94</width>
+        <height>21</height>
+        <tooltip>$(actions)</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>CPU load</name>
+    <x>331</x>
+    <y>800</y>
+    <height>71</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_85</name>
+      <pv_name>$(IOCNAME):#IOC_CPU_LOAD</pv_name>
+      <y>10</y>
+      <width>257</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="8.910891089108912">
+        </font>
+      </font>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>File descriptors</name>
+    <x>331</x>
+    <y>871</y>
+    <height>100</height>
+    <widget type="label" version="2.0.0">
+      <name>Label_83</name>
+      <text>Free</text>
+      <y>10</y>
+      <width>40</width>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_84</name>
+      <text>Max</text>
+      <y>35</y>
+      <width>40</width>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_86</name>
+      <pv_name>$(IOCNAME):#FD_FREE</pv_name>
+      <x>60</x>
+      <y>10</y>
+      <width>200</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="8.910891089108912">
+        </font>
+      </font>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_87</name>
+      <pv_name>$(IOCNAME):#FD_MAX</pv_name>
+      <x>60</x>
+      <y>35</y>
+      <width>200</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="8.910891089108912">
+        </font>
+      </font>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>IF Errors</name>
+    <x>331</x>
+    <y>971</y>
+    <height>100</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_88</name>
+      <pv_name>$(IOCNAME):IFO_ERR_CNT</pv_name>
+      <x>60</x>
+      <y>10</y>
+      <width>200</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="8.910891089108912">
+        </font>
+      </font>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_89</name>
+      <pv_name>$(IOCNAME):IFI_ERR_CNT</pv_name>
+      <x>60</x>
+      <y>35</y>
+      <width>200</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="8.910891089108912">
+        </font>
+      </font>
+      <format>1</format>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_85</name>
+      <text>Output</text>
+      <y>35</y>
+      <width>50</width>
+      <height>15</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_86</name>
+      <text>Input</text>
+      <y>10</y>
+      <width>50</width>
+      <height>15</height>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+</display>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ioc_stats_reboot_confirm</name>
+  <x>903</x>
+  <y>166</y>
+  <width>280</width>
+  <height>143</height>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey02</name>
+    <width>280</width>
+    <height>143</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-titlebar</name>
+      <width>280</width>
+      <height>59</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>BGGrey02-title</name>
+      <text>IOC Reboot Confirmation $(IOCNAME)</text>
+      <width>280</width>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-background</name>
+      <y>30</y>
+      <width>280</width>
+      <height>113</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>BGGrey02-content-group</name>
+      <x>5</x>
+      <y>35</y>
+      <width>270</width>
+      <height>108</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(IOCNAME):SysReset</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(IOCNAME):SysReset</pv_name>
+        <text>Reboot Now!</text>
+        <x>66</x>
+        <y>62</y>
+        <width>123</width>
+        <background_color>
+          <color name="Text" red="25" green="25" blue="25">
+          </color>
+        </background_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>Are you sure you want to</text>
+        <x>16</x>
+        <y>12</y>
+        <width>250</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>reboot $(IOCNAME)?</text>
+        <x>16</x>
+        <y>29</y>
+        <width>250</width>
+        <height>15</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="8.910891089108912">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

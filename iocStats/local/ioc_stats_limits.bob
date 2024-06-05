@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>ioc_stats_limits</name>
+  <x>1090</x>
+  <y>60</y>
+  <width>340</width>
+  <height>240</height>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>BGGrey02</name>
+    <width>340</width>
+    <height>240</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-titlebar</name>
+      <width>341</width>
+      <height>59</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </background_color>
+      <corner_width>10</corner_width>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>BGGrey02-title</name>
+      <text>IOC Alarm Limits $(IOCNAME)</text>
+      <width>341</width>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>BGGrey02-background</name>
+      <y>30</y>
+      <width>341</width>
+      <height>210</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="GROUP-BORDER" red="150" green="155" blue="151">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_height>10</corner_height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>BGGrey02-content-group</name>
+      <x>10</x>
+      <y>40</y>
+      <width>331</width>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text># CA Clients</text>
+        <y>27</y>
+        <width>89</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text># CA PV Conns</text>
+        <y>57</y>
+        <width>89</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text># Susp Tasks</text>
+        <y>87</y>
+        <width>89</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>LOLO</text>
+        <x>201</x>
+        <y>142</y>
+        <width>50</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>LOW</text>
+        <x>264</x>
+        <y>142</y>
+        <width>50</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>Value</text>
+        <x>116</x>
+        <width>50</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>HIGH</text>
+        <x>203</x>
+        <width>50</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>HIHI</text>
+        <x>266</x>
+        <width>50</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_CLNT_CNT</pv_name>
+        <x>91</x>
+        <y>24</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#CA_CONN_CNT</pv_name>
+        <x>91</x>
+        <y>54</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#SUSP_TASK_CNT</pv_name>
+        <x>91</x>
+        <y>84</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text># Free FDs</text>
+        <y>170</y>
+        <width>89</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#FD_FREE</pv_name>
+        <x>91</x>
+        <y>167</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label</name>
+        <text>CPU Load (%)</text>
+        <y>117</y>
+        <width>69</width>
+        <height>15</height>
+        <background_color>
+          <color red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>$(IOCNAME):#IOC_CPU_LOAD</pv_name>
+        <x>91</x>
+        <y>114</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#CA_CLNT_CNT.HIGH</pv_name>
+        <x>201</x>
+        <y>24</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#CA_CLNT_CNT.HIHI</pv_name>
+        <x>262</x>
+        <y>24</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#CA_CONN_CNT.HIGH</pv_name>
+        <x>201</x>
+        <y>54</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#CA_CONN_CNT.HIHI</pv_name>
+        <x>262</x>
+        <y>54</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#SUSP_TASK_CNT.HIHI</pv_name>
+        <x>262</x>
+        <y>84</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#IOC_CPU_LOAD.HIGH</pv_name>
+        <x>201</x>
+        <y>114</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#IOC_CPU_LOAD.HIHI</pv_name>
+        <x>262</x>
+        <y>114</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#FD_FREE.LOLO</pv_name>
+        <x>201</x>
+        <y>166</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input</name>
+        <pv_name>$(IOCNAME):#FD_FREE.LOW</pv_name>
+        <x>262</x>
+        <y>166</y>
+        <width>56</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="13.861386138613861">
+          </font>
+        </font>
+        <format>1</format>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

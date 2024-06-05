@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-06-05 14:46:24 by wang1-->
+<display version="2.0.0">
+  <name>iocStats</name>
+  <macros>
+    <IOCNAME>TDL:SC-IOC-003</IOCNAME>
+  </macros>
+  <width>850</width>
+  <height>50</height>
+  <background_color>
+    <color red="212" green="210" blue="212" alpha="0">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <widget type="action_button" version="3.0.0">
+    <name>btn_stats</name>
+    <actions>
+      <action type="open_display">
+        <file>ioc_stats_soft.bob</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Status</text>
+    <x>250</x>
+    <y>5</y>
+    <width>70</width>
+    <height>40</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Unknown</text>
+    <x>590</x>
+    <y>10</y>
+    <width>250</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="20.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="PRIMARY-DARK" red="31" green="83" blue="102">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <scripts>
+      <script file="EmbeddedPy">
+        <text><![CDATA[from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+from org.csstudio.opibuilder.scriptUtil import ColorFontUtil
+import os
+
+RED = ColorFontUtil.RED
+WARNING_COLOR = ColorFontUtil.YELLOW
+FONT_COLOR = ColorFontUtil.getColorFromRGB(31, 83, 102)
+restore_path="/usr/local/share/opisControlDashboard/mainDisplays/common/location_restore"
+
+label=widget.getMacrosOrProperties().getValue("LABEL")
+iocname=widget.getMacrosOrProperties().getValue("IOCNAME")
+
+restore_file=restore_path+"/"+str(label)
+
+if(PVUtil.getLong(pvs[1]) == 0):
+	try:
+		f=open(restore_file, "r")
+		restored_location=f.read()
+		print(restored_location)
+		f.close()
+		if(restored_location == "Unknown"):
+			widget.setPropertyValue("foreground_color", WARNING_COLOR)
+		widget.setPropertyValue("text", restored_location)
+	except:
+		widget.setPropertyValue("foreground_color", WARNING_COLOR)
+		widget.setPropertyValue("text", "Restore file created")
+		print "Restore file not found for " + str(label) + " device. A new one will be created."
+		f=open(restore_file, "w")
+		f.write("Unknown")
+		os.chmod(restore_file, 0o0777)
+		f.close()
+	PVUtil.writePV("loc://"+iocname+"init", 1, 2)
+else:
+	location=PVUtil.getString(pvs[0])
+	try:
+		f=open(restore_file, "w")
+		f.write(location)
+		f.close()
+		if(location == "Unknown"):
+			widget.setPropertyValue("foreground_color", WARNING_COLOR)
+		else:
+			widget.setPropertyValue("foreground_color", FONT_COLOR)
+		widget.setPropertyValue("text", location)
+	except:
+		widget.setPropertyValue("foreground_color", RED)
+		widget.setPropertyValue("text", "Check Error Log")
+		print "Error trying to save the location, please check permissions for folder" + restore_path
+]]></text>
+        <pv_name>loc://$(IOCNAME)loc</pv_name>
+        <pv_name trigger="false">loc://$(IOCNAME)init</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>loc://$(IOCNAME)loc("")</pv_name>
+    <x>330</x>
+    <y>10</y>
+    <width>250</width>
+    <height>30</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="20.0">
+      </font>
+    </font>
+  </widget>
+</display>
